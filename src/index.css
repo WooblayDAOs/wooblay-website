@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1E1E1E;
+        color: #EAEAEA;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #EAEAEA;
+        color: #1E1E1E;
+    }
+}
