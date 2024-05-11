@@ -12,9 +12,9 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" :class="{ 'hidden': !isMenuOpen }">
           <div class="text-sm lg:flex-grow lg:flex lg:justify-end items-center">
-            <a href="/docs" class="mt-4 text-lg lg:mt-0 block mr-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              About
-            </a>
+        <router-link to="/docs" class="mt-4 text-lg lg:mt-0 block mr-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          About
+        </router-link>
             <a href="https://forms.gle/tYEqKTsjRarWAnst6" class="px-4 py-2 mt-4 text-lg lg:mt-0 pr-8 pl-8 block rounded-full border border-violet-400 text-violet-400 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               Platform
             </a>

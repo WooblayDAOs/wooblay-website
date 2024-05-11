@@ -34,7 +34,9 @@
 <br><br>
 Tasks and positions within decentralized projects are released, and contributors are automatically compensated upon completion, streamlining project management and incentivizing active participation. Additionally, users can leverage our supporter technology and potentially secure seed funding to fuel project development.
         </p>
-        <a href="/docs" class="text-lime-400 text-sm md:text-md">Show more ↗</a>
+        <router-link to="/docs" class="mt-4 text-lime-400 text-sm md:text-md">
+          Show more ↗
+</router-link>
       </div>
       <div class="w-full md:w-2/3">
         <iframe width="100%" height="415" src="https://www.youtube.com/embed/6ZYVGbRg63Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
