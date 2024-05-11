@@ -1,5 +1,5 @@
 <template>
-      <div class="container mx-auto px-4 pt-28">
+      <div class="container mx-auto px-4 pt-36">
     <div class="flex flex-col md:flex-row"> <!-- Add flex-col class for mobile layout -->
       <div class="w-full md:w-2/3"> <!-- Change w-2/3 to w-full for mobile layout -->
         <p class="text-left font-bold text-sm text-violet-400">The Launchpad for your Projects and Rewards</p>
@@ -27,7 +27,7 @@
     </div>
     <div class="flex flex-col md:flex-row mt-8"> <!-- Add flex-col class for mobile layout -->
       <div class="w-full md:w-1/3 mr-0 md:mr-12 text-sm"> <!-- Change w-1/2 to w-full for mobile layout and remove mr-12 for spacing -->
-        <p class="mb-4">>Welcome to Wooblay, bring your boldest ideas to life, where every idea has the potential to make a difference. Get involved in revolutionary projects and join a community of creators and idealists, and together, let's redefine what's possible.
+        <p class="mb-4">Welcome to Wooblay, bring your boldest ideas to life, where every idea has the potential to make a difference. Get involved in revolutionary projects and join a community of creators and idealists, and together, let's redefine what's possible.
           <br><br>
           Our platform enables the creation of decentralized projects through our friendly interface. Users can effortlessly customize their projects to suit their specific needs without any coding requirements. Within each decentralized project, every participant has a voice and voting rights, ensuring transparency and inclusivity in decision-making processes.
 <br><br>

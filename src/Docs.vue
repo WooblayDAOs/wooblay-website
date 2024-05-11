@@ -1,5 +1,5 @@
 <template>
-<div class="container mx-auto px-4 pt-28 mb-24">
+<div class="container mx-auto px-4 pt-36 mb-24">
     <!-- Card with text on the left and image on the right -->
     <div class="flex shadow-lg rounded-lg p-6 mb-6 border">
         <div class="w-1/2 mr-20">
