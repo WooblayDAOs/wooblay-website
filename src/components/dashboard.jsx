@@ -4,7 +4,7 @@ import Image from "next/image"
 export function Dashboard() {
   return (
     (<div className="bg-background text-foreground">
-      <header className="container mx-auto py-12 md:py-20 lg:py-28 px-4 md:px-6 mb-0">
+      <header className="container mx-auto py-8 md:py-14 lg:py-20 px-4 md:px-6 mb-0">
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Platform Features</div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
@@ -149,7 +149,7 @@ export function Dashboard() {
           </div>
         </div>
         <div className="absolute inset-0 z-0">
-          <Image src="/splotch.png" alt="Splotch Effect" className="w-full h-full object-cover opacity-25" />
+          <Image src="/splotch.png" alt="Splotch Effect" className="w-full h-full object-cover opacity-25" width={400} height={400} />
         </div>
       </section>
     </div>)

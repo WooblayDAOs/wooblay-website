@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Carousel from "./carousel";
 import Image from "next/image"
+import CarouselMobile from "./carouselMobile";
 
 export function Welcome() {
 
@@ -26,7 +27,7 @@ export function Welcome() {
     }, []);
 
     return (
-        <div className="relative bg-cover bg-center min-h-screen">
+        <div className="relative bg-cover bg-center h-[80vh] md:min-h-screen">
             <div className="absolute inset-0 flex flex-col items-center justify-center z-10 mb-24">
                 <header className="relative z-10 px-6 sm:px-12 py-12 sm:py-16 flex flex-col items-center justify-center bg-opacity-90 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
                     <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight sm:text-6xl xl:text-7xl text-center mb-6 sm:mb-10 text-white drop-shadow-lg">
@@ -56,20 +57,24 @@ export function Welcome() {
                 <div className="hidden sm:block sm:absolute left-[-8%] top-40">
                     <Carousel />
                 </div>
-                <div className="block sm:hidden mt-48">
-                    <Carousel />
-                </div>
+                {/* <div className="block sm:hidden mt-48">
+                    <CarouselMobile />
+                </div> */}
                 <Image
                     src="/blocks.png"
-                    className="hidden sm:block absolute top-1 right-10 w-1/2 sm:w-1/3 h-auto animate-bounce"
+                    className="absolute top-1 right-10 w-1/2 sm:w-1/3 h-auto animate-bounce"
                     alt="Overlapping Image 1"
                     data-effect="bounce"
+                    width={400}
+                    height={400}
                 />
                 <Image
                     src="/arm.png"
-                    className="hidden sm:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/3 sm:w-1/4 h-auto animate-rotate"
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/3 sm:w-1/4 h-auto animate-rotate"
                     alt="Overlapping Image 3"
                     data-effect="rotate"
+                    width={400}
+                    height={400}
                 />
             </div>
         </div>
