@@ -56,7 +56,7 @@ export function ChainFeatures() {
                       <LayersIcon className="h-8 w-8 text-tertiary-foreground" />
                       <h3 className="text-2xl font-bold text-tertiary-foreground">Flexible Configuration</h3>
                       <p className="text-tertiary-foreground/80">
-                        Customize your application's infrastructure to fit your unique needs, with a wide range of
+                        Customize your application&apos;s infrastructure to fit your unique needs, with a wide range of
                         configuration options.
                       </p>
                     </div>
@@ -126,7 +126,7 @@ export function ChainFeatures() {
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ironclad Security</h2>
                     <p
                       className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                      Our platform is built with security at its core, ensuring your data and your users' information is
+                      Our platform is built with security at its core, ensuring your data and your users&apos; information is
                       always protected.
                     </p>
                   </div>
@@ -140,7 +140,7 @@ export function ChainFeatures() {
                       <LockIcon className="h-8 w-8 text-secondary-foreground" />
                       <h3 className="text-2xl font-bold text-secondary-foreground">Secure by Design</h3>
                       <p className="text-secondary-foreground/80">
-                        Our platform is built with security as a top priority, ensuring your data and your users'
+                        Our platform is built with security as a top priority, ensuring your data and your users
                         information is always protected.
                       </p>
                     </div>
@@ -166,7 +166,7 @@ export function ChainFeatures() {
                       <KeyIcon className="h-8 w-8 text-primary-foreground" />
                       <h3 className="text-2xl font-bold text-primary-foreground">Robust Authentication</h3>
                       <p className="text-primary-foreground/80">
-                        Our platform offers advanced authentication features, ensuring your users' accounts are secure
+                        Our platform offers advanced authentication features, ensuring your users accounts are secure
                         and protected.
                       </p>
                     </div>

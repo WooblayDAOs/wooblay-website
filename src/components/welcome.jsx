@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Carousel from "./carousel";
+import Image from "next/image"
 
 export function Welcome() {
 
@@ -58,13 +59,13 @@ export function Welcome() {
                 <div className="block sm:hidden mt-48">
                     <Carousel />
                 </div>
-                <img
+                <Image
                     src="/blocks.png"
                     className="hidden sm:block absolute top-1 right-10 w-1/2 sm:w-1/3 h-auto animate-bounce"
                     alt="Overlapping Image 1"
                     data-effect="bounce"
                 />
-                <img
+                <Image
                     src="/arm.png"
                     className="hidden sm:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/3 sm:w-1/4 h-auto animate-rotate"
                     alt="Overlapping Image 3"

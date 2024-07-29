@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image';
 
 export function Benefits() {
   return (
@@ -37,7 +38,7 @@ export function Benefits() {
               <a href="/blog" className="text-primary hover:underline mt-4 block">Read More</a>
             </div>
             <div className="w-1/3">
-              <img src="/outline.png" alt="Blog Post Image" className="rounded-lg shadow-lg" />
+              <Image src="/outline.png" alt="Blog Post Image" className="rounded-lg shadow-lg" width={250} height={250} />
             </div>
           </div>
         </div>

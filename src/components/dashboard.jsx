@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Dashboard() {
   return (
@@ -19,7 +20,7 @@ export function Dashboard() {
               <span className="sr-only">View</span>
             </Link>
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="Feature 1"
                 width={400}
@@ -37,7 +38,7 @@ export function Dashboard() {
               <span className="sr-only">View</span>
             </Link>
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="Feature 2"
                 width={400}
@@ -55,7 +56,7 @@ export function Dashboard() {
               <span className="sr-only">View</span>
             </Link>
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="Feature 3"
                 width={400}
@@ -73,7 +74,7 @@ export function Dashboard() {
               <span className="sr-only">View</span>
             </Link>
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="Feature 4"
                 width={400}
@@ -91,7 +92,7 @@ export function Dashboard() {
               <span className="sr-only">View</span>
             </Link>
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="Feature 5"
                 width={400}
@@ -109,7 +110,7 @@ export function Dashboard() {
               <span className="sr-only">View</span>
             </Link>
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="Feature 6"
                 width={400}
@@ -148,7 +149,7 @@ export function Dashboard() {
           </div>
         </div>
         <div className="absolute inset-0 z-0">
-          <img src="/splotch.png" alt="Splotch Effect" className="w-full h-full object-cover opacity-25" />
+          <Image src="/splotch.png" alt="Splotch Effect" className="w-full h-full object-cover opacity-25" />
         </div>
       </section>
     </div>)
