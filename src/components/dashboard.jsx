@@ -8,7 +8,7 @@ export function Dashboard() {
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Platform Features</div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-            Elevate Your Digital Experience
+            Your Dashboard
           </h1>
         </div>
       </header>
@@ -131,7 +131,7 @@ export function Dashboard() {
             className="inline-block rounded-lg bg-muted-foreground px-3 py-1 text-sm text-muted">For businesses</div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">Join our list of partners</h2>
           <p className="text-muted-foreground text-lg md:text-xl lg:text-2xl">
-            Experience the power of projects being built on your technology.
+            Experience the power of projects being built on your technology. Get your own private space on our platform with a tailored profile, toolkits and SDK built to support your product and your community.
           </p>
           <div className="flex justify-center space-x-4">
             <Link

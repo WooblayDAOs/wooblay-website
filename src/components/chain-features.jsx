@@ -13,11 +13,10 @@ export function ChainFeatures() {
                   className="flex flex-col items-center justify-center space-y-4 text-center">
                   <div className="space-y-2">
                     <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">For Innovators</div>
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Effortless Scaling</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Scale to the moon 🌑</h2>
                     <p
                       className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                      Our platform is designed to scale seamlessly, ensuring your application can handle even the
-                      highest traffic spikes without a hitch.
+                      Wooblay enables you to grow your idea without the limits of classic blockers.
                     </p>
                   </div>
                 </div>
@@ -28,11 +27,11 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-primary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <BoltIcon className="h-8 w-8 text-primary-foreground" />
-                      <h3 className="text-2xl font-bold text-primary-foreground">Instant Scaling</h3>
+                      <h3 className="text-2xl font-bold text-primary-foreground">Fund your idea</h3>
                       <p className="text-primary-foreground/80">
-                        Our platform automatically scales your application to handle sudden traffic spikes, ensuring a
-                        seamless user experience.
+                        Our large list of supporters release project bounties and funding for many projects, you can also sell NFTs and promises to kickstart your projects budget.
                       </p>
+                      {/* TODO: Projects funded count here */}
                     </div>
                   </Card>
                   <Card
@@ -41,7 +40,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-secondary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <CpuIcon className="h-8 w-8 text-secondary-foreground" />
-                      <h3 className="text-2xl font-bold text-secondary-foreground">Powerful Infrastructure</h3>
+                      <h3 className="text-2xl font-bold text-secondary-foreground">AI Agents</h3>
                       <p className="text-secondary-foreground/80">
                         Our robust infrastructure ensures your application runs smoothly, even under heavy load, with
                         industry-leading uptime and reliability.
@@ -54,7 +53,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-tertiary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <LayersIcon className="h-8 w-8 text-tertiary-foreground" />
-                      <h3 className="text-2xl font-bold text-tertiary-foreground">Flexible Configuration</h3>
+                      <h3 className="text-2xl font-bold text-tertiary-foreground">Blockchain integration</h3>
                       <p className="text-tertiary-foreground/80">
                         Customize your application&apos;s infrastructure to fit your unique needs, with a wide range of
                         configuration options.
@@ -67,12 +66,11 @@ export function ChainFeatures() {
                 <div
                   className="flex flex-col items-center justify-center space-y-4 text-center">
                   <div className="space-y-2">
-                    <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">For Developers</div>
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Blazing-Fast Performance</h2>
+                    <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">For Builders</div>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Be paid from every angle 📐</h2>
                     <p
                       className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                      Our platform is optimized for lightning-fast response times, ensuring your users enjoy a seamless
-                      and delightful experience.
+                      Developers can join teams, compelte tasks and earn from the project's success all automatically.
                     </p>
                   </div>
                 </div>
@@ -83,7 +81,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-tertiary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <ZapIcon className="h-8 w-8 text-tertiary-foreground" />
-                      <h3 className="text-2xl font-bold text-tertiary-foreground">Rapid Response</h3>
+                      <h3 className="text-2xl font-bold text-tertiary-foreground">Tasks</h3>
                       <p className="text-tertiary-foreground/80">
                         Our platform delivers lightning-fast response times, ensuring your users enjoy a seamless and
                         high-performance experience.
@@ -96,7 +94,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-primary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <RocketIcon className="h-8 w-8 text-primary-foreground" />
-                      <h3 className="text-2xl font-bold text-primary-foreground">Optimized for Speed</h3>
+                      <h3 className="text-2xl font-bold text-primary-foreground">Team</h3>
                       <p className="text-primary-foreground/80">
                         Our platform is meticulously optimized to deliver lightning-fast performance, ensuring your
                         users experience the best possible response times.
@@ -109,7 +107,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-secondary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <CpuIcon className="h-8 w-8 text-secondary-foreground" />
-                      <h3 className="text-2xl font-bold text-secondary-foreground">Powerful Infrastructure</h3>
+                      <h3 className="text-2xl font-bold text-secondary-foreground">Repositories</h3>
                       <p className="text-secondary-foreground/80">
                         Our robust infrastructure is designed to deliver lightning-fast response times, ensuring your
                         users enjoy a seamless and high-performance experience.
@@ -123,7 +121,7 @@ export function ChainFeatures() {
                   className="flex flex-col items-center justify-center space-y-4 text-center">
                   <div className="space-y-2">
                     <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">For You</div>
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ironclad Security</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Your experience</h2>
                     <p
                       className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                       Our platform is built with security at its core, ensuring your data and your users&apos; information is
@@ -138,7 +136,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-secondary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <LockIcon className="h-8 w-8 text-secondary-foreground" />
-                      <h3 className="text-2xl font-bold text-secondary-foreground">Secure by Design</h3>
+                      <h3 className="text-2xl font-bold text-secondary-foreground">Paid to play</h3>
                       <p className="text-secondary-foreground/80">
                         Our platform is built with security as a top priority, ensuring your data and your users
                         information is always protected.
@@ -151,7 +149,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-tertiary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <ShieldIcon className="h-8 w-8 text-tertiary-foreground" />
-                      <h3 className="text-2xl font-bold text-tertiary-foreground">Compliance-Ready</h3>
+                      <h3 className="text-2xl font-bold text-tertiary-foreground">Explore projects</h3>
                       <p className="text-tertiary-foreground/80">
                         Our platform is designed to meet the highest security and compliance standards, ensuring your
                         business remains compliant.
@@ -164,7 +162,7 @@ export function ChainFeatures() {
                       className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-primary-foreground/10 blur-[100px]" />
                     <div className="relative z-10 flex flex-col items-start gap-4">
                       <KeyIcon className="h-8 w-8 text-primary-foreground" />
-                      <h3 className="text-2xl font-bold text-primary-foreground">Robust Authentication</h3>
+                      <h3 className="text-2xl font-bold text-primary-foreground">Profile & Reputation</h3>
                       <p className="text-primary-foreground/80">
                         Our platform offers advanced authentication features, ensuring your users accounts are secure
                         and protected.

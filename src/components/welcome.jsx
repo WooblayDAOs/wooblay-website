@@ -29,10 +29,11 @@ export function Welcome() {
     return (
         <div className="relative bg-cover bg-center h-[80vh] md:min-h-screen">
             <div className="absolute inset-0 flex flex-col items-center justify-center z-10 mb-24">
-                <header className="relative z-10 px-6 sm:px-12 py-12 sm:py-16 flex flex-col items-center justify-center bg-opacity-90 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
-                    <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight sm:text-6xl xl:text-7xl text-center mb-6 sm:mb-10 text-white drop-shadow-lg">
+                <header className="relative z-10 px-6 sm:px-12 pt-12 sm:py-16 flex flex-col items-center justify-center bg-opacity-90 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+                    <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight sm:text-6xl xl:text-7xl text-center mb-2 text-white drop-shadow-lg">
                         Wooblay
                     </h1>
+                    <p className="font-light tracking-tight text-center mb-6 sm:mb-10 text-white drop-shadow-lg">Build and join open-source projects on-chain.</p>
                     <nav className="flex flex-wrap gap-2 sm:gap-4 text-lg font-bold text-white">
                         <Link href="#" className="relative hover:underline underline-offset-4 transition duration-300 ease-in-out transform hover:scale-110">
                             Features
