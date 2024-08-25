@@ -5,7 +5,7 @@ export default function DocsPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4">
-        <ImageHead title="Entrepreneurs" />
+        <ImageHead title="Contributors" />
       </section>
     </DefaultLayout>
   );

@@ -20,7 +20,7 @@ import Image from "next/image";
 export const Navbar = () => {
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar maxWidth="full" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -34,7 +34,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
+        <div className="hidden lg:flex gap-8 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -50,7 +50,7 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </div>
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem className="hidden md:flex ml-4">
           <Button
             isExternal
             as={Link}

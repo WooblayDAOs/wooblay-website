@@ -12,7 +12,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <main className="flex-grow pt-8">
+      <main className="flex-grow">
         {children}
       </main>
       <footer className="w-full flex justify-between items-center py-3 bg-gray-800 px-3">

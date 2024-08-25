@@ -9,8 +9,8 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "For Creators",
-      href: "/creators",
+      label: "For Contributors",
+      href: "/contributors",
     },
     {
       label: "For Entrepreneurs",
