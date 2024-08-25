@@ -1,4 +1,3 @@
-import { Link } from "@nextui-org/link";
 import Image from "next/image";
 import { Head } from "./head";
 
@@ -13,7 +12,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
+      <main className="flex-grow pt-8">
         {children}
       </main>
       <footer className="w-full flex justify-between items-center py-3 bg-gray-800 px-3">

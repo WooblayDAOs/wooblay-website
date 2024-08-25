@@ -14,13 +14,7 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon
-} from "@/components/icons";
+
 import Image from "next/image";
 
 export const Navbar = () => {
@@ -34,18 +28,6 @@ export const Navbar = () => {
             <p className="font-bold text-inherit">Wooblay</p>
           </NextLink>
         </NavbarBrand>
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <ThemeSwitch />
-        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent
@@ -72,10 +54,10 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-black bg-yellow-green font-bold"
+            className="text-sm font-normal text-black font-bold"
             href={siteConfig.links.sponsor}
-            variant="shadow"
             radius="sm"
+            color="primary"
           >
             Get Started
           </Button>
@@ -83,10 +65,6 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 

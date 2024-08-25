@@ -12,9 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <NextUIProvider navigate={router.push}>
-      <NextThemesProvider>
+      <main className="normal text-foreground bg-background font-workSans">
         <Component {...pageProps} />
-      </NextThemesProvider>
+      </main>
     </NextUIProvider>
   );
 }

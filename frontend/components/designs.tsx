@@ -3,20 +3,22 @@ import { Tabs, Tab, Card, CardBody, Image } from "@nextui-org/react";
 
 export default function designs() {
   return (
-    <main>
-      <h1>Wooblay</h1>
-      <div className="flex w-full flex-col">
-        <Tabs disabledKeys={["dashboard", "feed", "tasks", "team", "profile"]} aria-label="Disabled Options">
+    <main className='bg-white-bg mb-24 pt-24'>
+      <div className='flex justify-center items-center p-20 font-titleBold'>
+        <h1 className='text-8xl font-bold text-text'>Wooblay</h1>
+      </div>
+      <div className="flex-col flex justify-center items-center">
+        <Tabs disabledKeys={["dashboard", "feed", "tasks", "team", "profile"]} color="primary" classNames={{ tabList: "bg-gray-white p-2", tab: "h-10", tabContent: "text-text pr-6 pl-6", cursor: "border border-text rounded-lg" }} aria-label="Disabled Options">
           <Tab key="explorer" title="Explorer">
-            <Card>
-              <CardBody>
-                <Image
-                  width={300}
-                  alt="Explorer"
-                  src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
-                />
-              </CardBody>
-            </Card>
+            <div className='w-screen flex justify-center mt-6'>
+              <Image
+                width={900}
+                height={500}
+                className='mt-8 rounded-xl'
+                alt="dashboard"
+                src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg"
+              />
+            </div>
           </Tab>
           <Tab key="dashboard" title="Dashboard">
             <Card>
