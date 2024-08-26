@@ -16,3 +16,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'interText';
+    src: url('/fonts/Inter/static/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interTextBold';
+    src: url('/fonts/Inter/static/Inter_24pt-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

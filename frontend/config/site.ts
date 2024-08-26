@@ -13,8 +13,8 @@ export const siteConfig = {
       href: "/contributors",
     },
     {
-      label: "For Entrepreneurs",
-      href: "/entrepreneurs",
+      label: "For Ideas",
+      href: "/ideas",
     },
     {
       label: "Our Community",
@@ -27,12 +27,12 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "For Creators",
-      href: "/creators",
+      label: "For Contributors",
+      href: "/contributors",
     },
     {
-      label: "For Entrepreneurs",
-      href: "/entrepreneurs",
+      label: "For Ideas",
+      href: "/ideas",
     },
     {
       label: "Our Community",

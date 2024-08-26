@@ -19,6 +19,8 @@ module.exports = {
       fontFamily: {
         titleBold: ['titleBold', 'sans-serif'],
         workSans: ['sansText', 'sans-serif'],
+        interText: ['interText', 'sans-serif'],
+        interTextBold: ['interTextBold', 'sans-serif'],
       },
     },
   },

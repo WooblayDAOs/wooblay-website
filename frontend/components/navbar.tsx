@@ -34,7 +34,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <div className="hidden lg:flex gap-8 justify-start ml-2">
+        <div className="hidden lg:flex gap-8 justify-start pl-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -50,12 +50,12 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </div>
-        <NavbarItem className="hidden md:flex ml-4">
+        <NavbarItem className="hidden md:flex pl-4">
           <Button
             isExternal
             as={Link}
             className="text-sm font-normal text-black font-bold"
-            href={siteConfig.links.sponsor}
+            href={'/waitlist'}
             radius="sm"
             color="primary"
           >
@@ -69,7 +69,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        <div className="px-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
