@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 export default function Cursors() {
 
     return (
-        <div className="mx-6 overflow-hidden pt-32" style={{ height: '80vh', background: 'linear-gradient(to bottom, #ffffff, #DEEFF5, #ffffff, #DEEFF5, #ADD8E6, #04020D, #04020D, #04020D, #04020D)' }}>
+        <div className="mx-6 overflow-hidden pt-32" style={{ height: '80vh', background: 'linear-gradient(to bottom, #ffffff, #effaff ,#DEEFF5, #87a6b4, #374850, #04020D, #04020D, #04020D, #04020D, #04020D)' }}>
             {/* First arrow - middle right */}
             <motion.div
                 className='absolute bottom-[-5%] left-[50%] translate-x-[-120px]'
                 initial={{ x: '-120px', y: 0, opacity: 1 }}
                 whileInView={{ x: '-10px', y: '-15vh', opacity: 0 }}
-                transition={{ ease: "easeOut", duration: 3, delay: 1.5 }}
+                transition={{ ease: "easeOut", duration: 2.5, delay: 1.5 }}
             >
                 <Image
                     src="/cursorprac.png"
@@ -25,7 +25,7 @@ export default function Cursors() {
                 className='absolute bottom-[-10%] right-[29%]'
                 initial={{ x: 0, y: 0, opacity: 1 }}
                 whileInView={{ x: '-20vw', y: '-20vh', opacity: 0 }}
-                transition={{ ease: "easeOut", duration: 3, delay: 0.5 }}
+                transition={{ ease: "easeOut", duration: 1.5, delay: 0 }}
             >
                 <Image
                     src="/cursorprac.png"
@@ -39,7 +39,7 @@ export default function Cursors() {
                 className='absolute bottom-[15%] right-[22%]'
                 initial={{ x: 0, y: 0, opacity: 1 }}
                 whileInView={{ x: '-25vw', y: '4vh', opacity: 0 }}
-                transition={{ ease: "easeOut", duration: 3, delay: 0.5 }}
+                transition={{ ease: "easeOut", duration: 2.5, delay: 0 }}
             >
                 <Image
                     src="/cursorprac.png"
@@ -53,7 +53,7 @@ export default function Cursors() {
                 className='absolute bottom-[25%] right-[40%]'
                 initial={{ x: 0, y: 0, opacity: 1 }}
                 whileInView={{ x: '-7vw', y: '15vh', opacity: 0 }}
-                transition={{ ease: "easeOut", duration: 3, delay: 1.5 }}
+                transition={{ ease: "easeOut", duration: 2.5, delay: 1.5 }}
             >
                 <Image
                     src="/cursorprac.png"
@@ -67,7 +67,7 @@ export default function Cursors() {
                 className='absolute bottom-[20%] left-[32%]'
                 initial={{ x: 0, y: 0, opacity: 1 }}
                 whileInView={{ x: '18vw', y: '10vh', opacity: 0 }}
-                transition={{ ease: "easeOut", duration: 3, delay: 1.5 }}
+                transition={{ ease: "easeOut", duration: 2.5, delay: 1.5 }}
             >
                 <Image
                     src="/cursorprac.png"
@@ -81,7 +81,7 @@ export default function Cursors() {
                 className='absolute bottom-[0%] left-[25%]'
                 initial={{ x: 0, y: 0, opacity: 1 }}
                 whileInView={{ x: '25vw', y: '-10vh', opacity: 0 }}
-                transition={{ ease: "easeOut", duration: 3, delay: 1.5 }}
+                transition={{ ease: "easeOut", duration: 2.5, delay: 0.5 }}
             >
                 <Image
                     src="/cursorprac.png"

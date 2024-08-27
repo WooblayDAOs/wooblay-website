@@ -3,7 +3,7 @@ import { FaUsers, FaGavel, FaProjectDiagram, FaTools } from 'react-icons/fa';
 
 export default function Show() {
     return (
-        <div className='bg-black text-white py-16 px-8 font-interText'>
+        <div className='bg-black text-white py-32 px-8 font-interText'>
             <div className='text-center max-w-2xl mx-auto mb-16'>
                 <h1 className='text-4xl font-interTextBold mb-4'>Make your impact.</h1>
                 <p className='text-lg leading-relaxed'>
