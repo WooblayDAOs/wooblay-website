@@ -3,12 +3,14 @@ import Designs from "@/components/designs";
 import ImageHead from "@/components/imageHead";
 import Show from "@/components/show";
 import Intro from "@/components/intro";
+import Cursors from "@/components/cursors";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
       <section>
         <Intro />
+        <Cursors />
         <ImageHead title="Power the world with your contributions." description="Claim earnings for completing tasks. Be a permanent member of a project you really like and become a stakeholder. Create your idea from scratch and make innovation a reality!" backgroundImage="/people.png" isFullHeight={true} margin={true} rounded={true} />
         <Show />
         <Designs />

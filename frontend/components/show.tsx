@@ -23,7 +23,7 @@ export default function Show() {
                         <FaGavel className='text-4xl text-primary mb-2 text-white' />
                         <h2 className='text-2xl font-interTextBold mb-2'>Lead with Collaborative Governance</h2>
                         <p className='leading-relaxed'>
-                            Give power to your people through concise, collaborative decision-making frameworks.
+                            Give power to your people through concise, collaborative decision-making frameworks. Build a web of projects and have each impact each other.
                         </p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export default function Show() {
                         <FaTools className='text-4xl text-primary mb-2 text-white' />
                         <h2 className='text-2xl font-interTextBold mb-2'>Efficient Operations</h2>
                         <p className='leading-relaxed'>
-                            Reward contributors and effectively track development automatically with our extensions.
+                            Reward contributors and track development automatically with our extensions. Create project bounties and sub-projects to jumpstart new innovators.
                         </p>
                     </div>
                 </div>
