@@ -9,19 +9,19 @@ export default function IdeasPage() {
         <ImageHead title="Ideas" backgroundImage="/gallery.png" />
         <Cards
           cardstwo={true}
-          description="Give the community a say in the direction of your projects. Let their decisions influence project outcomes."
+          description="Define your goals, assemble your team, and organise tasks effortlessly in a transparent and automated environment."
           image1="/gallery.png"
           image2="/gallery.png"
-          title="Upgrade to community decisions making"
+          title="Launch your projects within a few clicks."
         />
         <Cards
           cardsthree={true}
-          description="Give the community a say in the direction of your projects. Let their decisions influence project outcomes."
+          description="Share ideas, collaborate on tasks, and work together to turn concepts into reality."
           image1="/gallery.png"
           image2="/gallery.png"
           image3="gallery.png"
           image4="gallery.png"
-          title="Upgrade to community decisions making"
+          title="Innovate with a vibrant community."
         />
         <Cards
           cardsrow={true}
@@ -29,16 +29,7 @@ export default function IdeasPage() {
           image1="/gallery.png"
           image2="/gallery.png"
           image3="gallery.png"
-          title="Upgrade to community decisions making"
-        />
-        <Cards
-          cardsrow={true}
-          description="Give the community a say in the direction of your projects. Let their decisions influence project outcomes."
-          image1="/gallery.png"
-          image2="/gallery.png"
-          image3="gallery.png"
-          margin={true}
-          title="Upgrade to community decisions making"
+          title="Upgrade to community decisions making."
         />
         <ImageHead
           button={true}
