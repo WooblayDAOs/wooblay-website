@@ -4,20 +4,20 @@ import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 
 interface CardProps {
-    title: string;
+    cardsrow?: boolean;
+    cardssquare?: boolean;
+    cardstwo?: boolean;
+    cardsthree?: boolean;
     description: string;
     image1?: string;
     image2?: string;
     image3?: string;
     image4?: string;
-    cardsrow?: boolean;
-    cardssquare?: boolean;
-    cardstwo?: boolean;
-    cardsthree?: boolean;
     margin?: boolean;
+    title: string;
 }
 
-export default function CardsRow({ cardsrow = false, cardssquare = false, cardstwo = false, cardsthree = false, title, description, image1, image2, image3, image4, margin = false }: CardProps) {
+export default function CardsRow({ cardsrow = false, cardssquare = false, cardstwo = false, cardsthree = false, description, image1, image2, image3, image4, margin = false, title }: CardProps) {
     return (
         <main className={`${margin ? 'mb-16' : ''} "p-6" "font-interText"`}>
             <div className="flex justify-center items-center pt-32 pb-16">
