@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'titleBold';
+    src: url('/fonts/base_neue/BaseNeueTrial-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sansText';
+    src: url('/fonts/Work_Sans/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interText';
+    src: url('/fonts/Inter/static/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interTextBold';
+    src: url('/fonts/Inter/static/Inter_24pt-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
