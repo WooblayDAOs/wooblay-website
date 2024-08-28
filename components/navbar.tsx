@@ -18,13 +18,12 @@ import { siteConfig } from "@/config/site";
 import Image from "next/image";
 
 export const Navbar = () => {
-
   return (
     <NextUINavbar maxWidth="full" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Image src='/splotch.png' alt="Wooblay" width={40} height={40} />
+            <Image src="/splotch.png" alt="Wooblay" width={40} height={40} />
             <p className="font-bold text-inherit">Wooblay</p>
           </NextLink>
         </NavbarBrand>
@@ -55,7 +54,7 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal text-black font-bold"
-            href={'/waitlist'}
+            href={"/waitlist"}
             radius="sm"
             color="primary"
           >
