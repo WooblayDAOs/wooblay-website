@@ -16,10 +16,10 @@ export const siteConfig = {
       label: "For Ideas",
       href: "/ideas",
     },
-    {
-      label: "Our Community",
-      href: "/community",
-    },
+    // {
+    //   label: "Our Community",
+    //   href: "/community",
+    // },
   ],
   navMenuItems: [
     {
@@ -34,10 +34,10 @@ export const siteConfig = {
       label: "For Ideas",
       href: "/ideas",
     },
-    {
-      label: "Our Community",
-      href: "/community",
-    },
+    // {
+    //   label: "Our Community",
+    //   href: "/community",
+    // },
   ],
   links: {
     github: "https://github.com/nextui-org/nextui",

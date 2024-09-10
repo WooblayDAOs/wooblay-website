@@ -41,6 +41,7 @@ export default function ContributorsPage() {
           image3="gallery.png"
           title="Access a fully integrated repository."
         />
+        <div className="mb-16" />
         <ImageHead
           description="Waitlist to try beta"
           gradient="linear-gradient(135deg, #f7e4b0, #e7bcf3, #aad1eb)"

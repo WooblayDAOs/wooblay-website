@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 export default function Intro() {
   return (
     <div
-      className="mx-6 rounded-t-[20px] pt-32"
+      className="p-6 md:mx-6 md:rounded-t-[20px] pt-32 h-screen"
       style={{
-        height: "60vh",
         background:
           "linear-gradient(to bottom, #DEEFF5, #ffffff, #DEEFF5, #ffffff, #ffffff, #ffffff",
       }}

@@ -31,6 +31,7 @@ export default function IdeasPage() {
           image3="gallery.png"
           title="Upgrade to community decisions making."
         />
+        <div className="mb-16" />
         <ImageHead
           button={true}
           description="Waitlist to try beta"
