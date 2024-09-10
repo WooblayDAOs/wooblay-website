@@ -118,7 +118,7 @@ export default function Cursors() {
 
       {/* Fourth arrow - top middle */}
       <motion.div
-        className="absolute bottom-[-10%] right-[40%] w-16 md:w-36"
+        className="absolute bottom-[-18%] right-[40%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "-7vw", y: "15vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 3 }}
@@ -128,7 +128,7 @@ export default function Cursors() {
 
       {/* Fifth arrow - top left */}
       <motion.div
-        className="absolute bottom-[-15%] left-[27%] w-16 md:w-36"
+        className="absolute bottom-[-20%] left-[27%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "18vw", y: "10vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 2.5 }}
