@@ -82,13 +82,13 @@ export default function Cursors() {
       <div className="text-black flex flex-col justify-center items-center">
         <h1 className="text-5xl font-interTextBold">Collaborative Ecosystem</h1>
         <p className="font-interText mt-4">
-          People working together to make something happen.
+          People working together to make an idea happen.
         </p>
       </div>
 
       {/* First arrow - bottom middle */}
       <motion.div
-        className="absolute bottom-[-65%] left-[50%] translate-x-[-120px] w-16 md:w-36"
+        className="hidden sm:block absolute bottom-[-65%] left-[50%] translate-x-[-120px] w-16 md:w-36"
         initial={{ x: "-120px", y: 0, opacity: 1 }}
         whileInView={{ x: "-50px", y: "-20vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 3 }}
@@ -98,7 +98,7 @@ export default function Cursors() {
 
       {/* Second arrow - bottom right*/}
       <motion.div
-        className="absolute bottom-[-58%] right-[19%] w-16 md:w-36"
+        className="hidden sm:block absolute bottom-[-58%] right-[19%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "-20vw", y: "-15vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 1.5, delay: 2.5 }}
@@ -108,7 +108,7 @@ export default function Cursors() {
 
       {/* Third arrow - right */}
       <motion.div
-        className="absolute bottom-[-24%] right-[15%] w-16 md:w-36"
+        className="hidden sm:block absolute bottom-[-24%] right-[15%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "-25vw", y: "4vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 2 }}
@@ -118,7 +118,7 @@ export default function Cursors() {
 
       {/* Fourth arrow - top middle */}
       <motion.div
-        className="absolute bottom-[-18%] right-[40%] w-16 md:w-36"
+        className="hidden sm:block absolute bottom-[-18%] right-[40%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "-7vw", y: "15vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 3 }}
@@ -128,7 +128,7 @@ export default function Cursors() {
 
       {/* Fifth arrow - top left */}
       <motion.div
-        className="absolute bottom-[-20%] left-[27%] w-16 md:w-36"
+        className="hidden sm:block absolute bottom-[-20%] left-[27%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "18vw", y: "10vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 2.5 }}
@@ -138,7 +138,7 @@ export default function Cursors() {
 
       {/* Sixth arrow - bottom left */}
       <motion.div
-        className="absolute bottom-[-53%] left-[15%] w-16 md:w-36"
+        className="hidden sm:block absolute bottom-[-53%] left-[15%] w-16 md:w-36"
         initial={{ x: 0, y: 0, opacity: 1 }}
         whileInView={{ x: "25vw", y: "-10vh", opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2.5, delay: 2.5 }}

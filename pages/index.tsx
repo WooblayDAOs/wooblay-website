@@ -12,8 +12,8 @@ export default function IndexPage() {
         <Intro />
         <Cursors />
         <ImageHead
-          title="Power the world with your contributions."
-          description="Claim earnings for completing tasks. Be a permanent member of a project you really like and become a stakeholder. Create your idea from scratch and make innovation a reality!"
+          title="Your Contributions."
+          description="Earn rewards for completing tasks. Join projects that interest you or bring your own ideas to life and turn innovation into reality."
           backgroundImage="/people.png"
           isFullHeight={true}
           margin={true}
