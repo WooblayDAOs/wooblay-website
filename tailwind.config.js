@@ -43,7 +43,7 @@ module.exports = {
               700: "#FCADF9",
               800: "#FDD5F9",
               900: "#FEECFE",
-              DEFAULT: "#99cfe0",
+              DEFAULT: "#4DFFFF",
               foreground: "#333333",
             },
             focus: "#F182F6",
