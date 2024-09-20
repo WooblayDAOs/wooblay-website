@@ -1,5 +1,4 @@
 import React from "react";
-
 import NextHead from "next/head";
 
 import { siteConfig } from "@/config/site";

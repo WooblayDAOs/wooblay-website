@@ -43,12 +43,12 @@ export default function ContributorsPage() {
         />
         <div className="mb-16" />
         <ImageHead
+          button={true}
           description="Waitlist to try beta"
           gradient="linear-gradient(135deg, #f7e4b0, #e7bcf3, #aad1eb)"
           isFullHeight={true}
           link="/waitlist"
           textBlack={true}
-          button={true}
           textLarger={true}
           title="Be the first to Wooblay"
         />

@@ -6,7 +6,7 @@ export default function IdeasPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center bg-white-bg text-text">
-        <ImageHead title="Ideas" backgroundImage="/gallery.png" />
+        <ImageHead backgroundImage="/gallery.png" title="Ideas" />
         <Cards
           cardstwo={true}
           description="Define your goals, assemble your team, and organise tasks effortlessly in a transparent and automated environment."

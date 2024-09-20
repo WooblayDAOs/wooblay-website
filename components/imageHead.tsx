@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 
@@ -60,9 +59,9 @@ export default function ImageHead({
               isExternal
               as={Link}
               className="text-2xl font-workSans mt-16 pl-16 pr-16 h-16 border border-black"
+              color="primary"
               href={link}
               radius="lg"
-              color="primary"
               size="lg"
             >
               Join waitlist now

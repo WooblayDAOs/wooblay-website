@@ -1,11 +1,9 @@
 import DefaultLayout from "@/layouts/default";
-import ImageHead from "@/components/imageHead";
 import Intro from "@/components/intro";
 import Walkthrough from "@/components/walkthrough";
 import Mission from "@/components/mission";
 import FeaturesGrid from "@/components/features-grid";
 import GoatedTerminal from "@/components/goated-terminal";
-
 
 export default function IndexPage() {
   return (

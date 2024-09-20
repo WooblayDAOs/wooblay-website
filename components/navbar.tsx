@@ -12,10 +12,9 @@ import { Link } from "@nextui-org/link";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
-
-import Image from "next/image";
 
 export const Navbar = () => {
   return (
@@ -23,7 +22,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Image src="/splotch.png" alt="Wooblay" width={40} height={40} />
+            <Image alt="Wooblay" height={40} src="/splotch.png" width={40} />
             <p className="font-bold text-inherit">Wooblay</p>
           </NextLink>
         </NavbarBrand>
@@ -54,9 +53,9 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal text-black font-bold"
+            color="primary"
             href={"/waitlist"}
             radius="sm"
-            color="primary"
           >
             Apply for Early Access
           </Button>
@@ -71,11 +70,7 @@ export const Navbar = () => {
         <div className="px-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color="primary"
-                href={item.href}
-                size="lg"
-              >
+              <Link color="primary" href={item.href} size="lg">
                 {item.label}
               </Link>
             </NavbarMenuItem>

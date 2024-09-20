@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Card, CardFooter } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
@@ -53,8 +52,8 @@ export default function CardsRow({
           <div className="flex justify-center">
             <Card
               isFooterBlurred
-              radius="none"
               className="border-none w-full lg:w-[800px] bg-gray-700 rounded-l-lg"
+              radius="none"
             >
               <Image
                 alt="Image 1"
@@ -65,10 +64,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -76,8 +75,8 @@ export default function CardsRow({
             </Card>
             <Card
               isFooterBlurred
-              radius="none"
               className="border-none w-full lg:w-[300px] bg-gray-700 rounded-r-lg"
+              radius="none"
             >
               <Image
                 alt="Image 1"
@@ -88,10 +87,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -101,8 +100,8 @@ export default function CardsRow({
           <div className="flex justify-center gap-6 pt-6">
             <Card
               isFooterBlurred
-              radius="lg"
               className="border-none w-full lg:w-[540px] bg-gray-700"
+              radius="lg"
             >
               <Image
                 alt="Image 1"
@@ -113,10 +112,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -125,8 +124,8 @@ export default function CardsRow({
 
             <Card
               isFooterBlurred
-              radius="lg"
               className="border-none w-full lg:w-[540px] bg-gray-700"
+              radius="lg"
             >
               <Image
                 alt="Image 3"
@@ -137,10 +136,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -154,8 +153,8 @@ export default function CardsRow({
         <div className="flex justify-center gap-6">
           <Card
             isFooterBlurred
-            radius="lg"
             className="border-none w-full lg:w-[400px] bg-gray-700"
+            radius="lg"
           >
             <Image
               alt="Image 1"
@@ -166,10 +165,10 @@ export default function CardsRow({
               <p className="text-tiny text-white/80">Available soon.</p>
               <Button
                 className="text-tiny text-white bg-black/20"
-                variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
+                variant="flat"
               >
                 Notify me
               </Button>
@@ -178,8 +177,8 @@ export default function CardsRow({
 
           <Card
             isFooterBlurred
-            radius="lg"
             className="border-none w-full lg:w-[250px] bg-gray-700"
+            radius="lg"
           >
             <Image
               alt="Image 2"
@@ -190,10 +189,10 @@ export default function CardsRow({
               <p className="text-tiny text-white/80">Available soon.</p>
               <Button
                 className="text-tiny text-white bg-black/20"
-                variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
+                variant="flat"
               >
                 Notify me
               </Button>
@@ -202,8 +201,8 @@ export default function CardsRow({
 
           <Card
             isFooterBlurred
-            radius="lg"
             className="border-none w-full lg:w-[400px] bg-gray-700"
+            radius="lg"
           >
             <Image
               alt="Image 3"
@@ -214,10 +213,10 @@ export default function CardsRow({
               <p className="text-tiny text-white/80">Available soon.</p>
               <Button
                 className="text-tiny text-white bg-black/20"
-                variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
+                variant="flat"
               >
                 Notify me
               </Button>
@@ -231,8 +230,8 @@ export default function CardsRow({
           <div className="flex justify-center gap-6 pt-6">
             <Card
               isFooterBlurred
-              radius="lg"
               className="border-none w-full lg:w-[540px] bg-gray-700"
+              radius="lg"
             >
               <Image
                 alt="Image 1"
@@ -243,10 +242,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -255,8 +254,8 @@ export default function CardsRow({
 
             <Card
               isFooterBlurred
-              radius="lg"
               className="border-none w-full lg:w-[540px] bg-gray-700"
+              radius="lg"
             >
               <Image
                 alt="Image 3"
@@ -267,10 +266,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -280,8 +279,8 @@ export default function CardsRow({
           <div className="flex flex-col lg:flex-row justify-center gap-6 mt-6">
             <Card
               isFooterBlurred
-              radius="lg"
               className="border-none w-full lg:w-[540px] bg-gray-700"
+              radius="lg"
             >
               <Image
                 alt="Image 1"
@@ -292,10 +291,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -304,8 +303,8 @@ export default function CardsRow({
 
             <Card
               isFooterBlurred
-              radius="lg"
               className="border-none w-full lg:w-[540px] bg-gray-700"
+              radius="lg"
             >
               <Image
                 alt="Image 3"
@@ -316,10 +315,10 @@ export default function CardsRow({
                 <p className="text-tiny text-white/80">Available soon.</p>
                 <Button
                   className="text-tiny text-white bg-black/20"
-                  variant="flat"
                   color="default"
                   radius="lg"
                   size="sm"
+                  variant="flat"
                 >
                   Notify me
                 </Button>
@@ -333,8 +332,8 @@ export default function CardsRow({
         <div className="flex justify-center gap-6 pt-6">
           <Card
             isFooterBlurred
-            radius="lg"
             className="border-none w-full lg:w-[800px] bg-gray-700"
+            radius="lg"
           >
             <Image
               alt="Image 1"
@@ -345,10 +344,10 @@ export default function CardsRow({
               <p className="text-tiny text-white/80">Available soon.</p>
               <Button
                 className="text-tiny text-white bg-black/20"
-                variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
+                variant="flat"
               >
                 Notify me
               </Button>
@@ -357,8 +356,8 @@ export default function CardsRow({
 
           <Card
             isFooterBlurred
-            radius="lg"
             className="border-none w-full lg:w-[300px] bg-gray-700"
+            radius="lg"
           >
             <Image
               alt="Image 3"
@@ -369,10 +368,10 @@ export default function CardsRow({
               <p className="text-tiny text-white/80">Available soon.</p>
               <Button
                 className="text-tiny text-white bg-black/20"
-                variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
+                variant="flat"
               >
                 Notify me
               </Button>
