@@ -8,14 +8,14 @@ export const siteConfig = {
       label: "",
       href: "/",
     },
-    {
-      label: "For Contributors",
-      href: "/contributors",
-    },
-    {
-      label: "For Ideas",
-      href: "/ideas",
-    },
+    // {
+    //   label: "For Contributors",
+    //   href: "/contributors",
+    // },
+    // {
+    //   label: "For Ideas",
+    //   href: "/ideas",
+    // },
     // {
     //   label: "Our Community",
     //   href: "/community",
@@ -26,14 +26,14 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
-    {
-      label: "For Contributors",
-      href: "/contributors",
-    },
-    {
-      label: "For Ideas",
-      href: "/ideas",
-    },
+    // {
+    //   label: "For Contributors",
+    //   href: "/contributors",
+    // },
+    // {
+    //   label: "For Ideas",
+    //   href: "/ideas",
+    // },
     // {
     //   label: "Our Community",
     //   href: "/community",

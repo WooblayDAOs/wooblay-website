@@ -58,7 +58,7 @@ export const Navbar = () => {
             radius="sm"
             color="primary"
           >
-            Get Started
+            Apply for Early Access
           </Button>
         </NavbarItem>
       </NavbarContent>
