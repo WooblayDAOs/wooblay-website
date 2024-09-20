@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import TextNImage from './textnimage';
 
 const contentData = [
-    { id: 'Collaborate', heading: 'Build your Dream Team', content: 'Release positions to the Feed and let your team find you, assign payment or let our AI distribute pay for you based on contributions. All you need to do is develop.', image: '/collaborate.webp' },
-    { id: 'Contribute', heading: 'Contribute', content: 'Content for Contribute section...', image: '/contribute.webp' },
-    { id: 'Create', heading: 'Create', content: 'Content for Create section...', image: '/create.webp' },
-    { id: 'Earn', heading: 'Earn', content: 'Content for Earn section...', image: '/earn.webp' },
+    {
+        id: 'Collaborate', heading: 'Collaborate', header: 'Build with your Dream Team', content: 'Release positions to the Feed and let your team find you, assign payment or let our AI distribute pay for you based on contributions. All you need to do is develop.', image: '/collaborate.webp'
+    },
+    { id: 'Contribute', heading: 'Contribute', header: 'Play your part in a project', content: 'From completing tasks to voting in project direction, your contributions make impact to the progression and decisions of a project.', image: '/contribute.webp' },
+    { id: 'Create', heading: 'Create', header: 'Launch your idea', content: 'Innovate in just a few clicks and create your project on the Blockchain, allowing infinite possibilities of enhancements for your project, just take a look at our extensions.', image: '/create.webp' },
+    { id: 'Earn', heading: 'Earn', header: 'You\u0027re rewarded for simply contributing', content: 'There are so many way to make money, for yourself or your project. From launching fundraises with token promises, completing paid tasks, accepting project bounties or simply innovating a good product. Money and innovation are equally as important so we make doing both easy.', image: '/earn.webp' },
 ];
 
 export default function Walkthrough() {
@@ -71,11 +73,17 @@ export default function Walkthrough() {
                         ref={leftNavRef}
                         className="sticky top-[0%] z-10 flex flex-col justify-start p-8 md:p-4 shadow-md h-full"
                     >
-                        {contentData.map((section) => (
+                        {contentData.map((section, index) => (
                             <h1
                                 key={section.id}
                                 className={`cursor-pointer py-2 md:py-4 text-md md:text-6xl transition-colors ${activeSection === section.id ? 'text-primary font-bold' : 'text-gray-500'
                                     }`}
+                                onClick={() => {
+                                    const targetSection = sectionsRef.current[index];
+                                    if (targetSection) {
+                                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                }}
                             >
                                 {section.heading}
                             </h1>
@@ -98,7 +106,7 @@ export default function Walkthrough() {
                                 <div>
                                     <TextNImage
                                         text={section.content}
-                                        heading={section.heading}
+                                        heading={section.header}
                                         imageUrl={`${section.image}`}
                                         reverse={index % 2 === 0}
                                     />

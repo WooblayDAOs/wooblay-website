@@ -69,3 +69,7 @@ button,
 textarea {
   font-family: "sansText", sans-serif;
 }
+
+.no-global-font {
+  font-family: monospace !important;
+}
