@@ -103,7 +103,7 @@ export default function Walkthrough() {
             className="sticky top-[0%] z-10 flex flex-col justify-start p-8 md:p-4 shadow-md h-full"
           >
             {contentData.map((section, index) => (
-              <h1
+              <button
                 key={section.id}
                 className={`cursor-pointer py-2 md:py-4 text-md md:text-6xl transition-colors ${
                   activeSection === section.id
@@ -117,9 +117,18 @@ export default function Walkthrough() {
                     targetSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    const targetSection = sectionsRef.current[index];
+
+                    if (targetSection) {
+                      targetSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }
+                }}
               >
                 {section.heading}
-              </h1>
+              </button>
             ))}
           </div>
 

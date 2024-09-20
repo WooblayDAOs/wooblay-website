@@ -1,6 +1,6 @@
 import DefaultLayout from "@/layouts/default";
 import ImageHead from "@/components/imageHead";
-import Cards from "@/components/expired/cards";
+import Cards from "@/components/cards";
 
 export default function ContributorsPage() {
   return (
