@@ -8,7 +8,7 @@ const contentData = [
     heading: "Collaborate",
     header: "Build with Your Dream Team",
     content:
-      "Easily assign tasks, release positions, set rewards and permissions, or let our AI handle payments based on individual contributions. Just focus on building your idea.",
+      "Easily assign tasks, release positions, set rewards and permissions, or auto pay based on contributions.",
     image: "/collaborate.webp",
   },
   {
@@ -16,7 +16,7 @@ const contentData = [
     heading: "Contribute",
     header: "Make an Impact Through Tasks",
     content:
-      "Jump into action by completing tasks, solving problems, or voting on key decisions. Every contribution you make, big or small, directly shapes a project.",
+      "Complete tasks, solve problems, or vote on key decisions. Every contribution you make directly shapes a project.",
     image: "/contribute.webp",
   },
   {
@@ -24,7 +24,7 @@ const contentData = [
     heading: "Create",
     header: "Bring Your Ideas to Life",
     content:
-      "Launch your vision with just a few clicks. Create projects where development tracked seamlessly and use extensions to enhance your project.",
+      "Launch your vision with just a few clicks where development is tracked seamlessly and extensions enhance your project.",
     image: "/create.webp",
   },
   {
@@ -32,7 +32,7 @@ const contentData = [
     heading: "Earn",
     header: "Get Paid for Every Contribution",
     content:
-      "Monetize your efforts a variety of different ways, we make earning easy, so you can focus on creating value.",
+      "Monetise your efforts we make earning easy, so you can focus on creating value.",
     image: "/earn.webp",
   },
 ];
