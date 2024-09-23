@@ -15,6 +15,7 @@ import clsx from "clsx";
 import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
+import { FaDiscord, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 export const Navbar = () => {
   return (
@@ -48,7 +49,15 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </div>
-        <NavbarItem className="hidden md:flex pl-4">
+        <NavbarItem className="hidden md:flex pl-4 gap-4">
+          <div className="flex justify-center items-center space-x-4">
+            <a href="https://x.com/RealWooblay" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="h-6 w-6 text-white" />
+            </a>
+            <a href="https://discord.gg/3JeUGzVrde" target="_blank" rel="noopener noreferrer">
+              <FaDiscord className="h-6 w-6 text-white" />
+            </a>
+          </div>
           <Button
             isExternal
             as={Link}
@@ -67,8 +76,16 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="mt-2 flex flex-col gap-2">
+        <div className="mt-2 flex flex-col justify-center items-center">
           <NavbarMenuItem>
+            <div className="flex items-center space-x-4 mb-8 mt-8">
+              <a href="https://x.com/RealWooblay" target="_blank" rel="noopener noreferrer">
+                <FaTwitter className="h-6 w-6 text-black" />
+              </a>
+              <a href="https://discord.gg/3JeUGzVrde" target="_blank" rel="noopener noreferrer">
+                <FaDiscord className="h-6 w-6 text-black" />
+              </a>
+            </div>
             <Button
               isExternal
               as={Link}
