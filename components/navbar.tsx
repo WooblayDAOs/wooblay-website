@@ -22,7 +22,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Image alt="Wooblay" height={40} src="/splotch.png" width={40} />
+            <Image alt="Wooblay" height={40} src="/favicon.ico" width={40} />
             <p className="font-bold text-inherit">Wooblay</p>
           </NextLink>
         </NavbarBrand>
