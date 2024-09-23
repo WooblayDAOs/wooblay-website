@@ -6,33 +6,33 @@ const contentData = [
   {
     id: "Collaborate",
     heading: "Collaborate",
-    header: "Build with your Dream Team",
+    header: "Build with Your Dream Team",
     content:
-      "Release positions to the Feed and let your team find you, assign payment or let our AI distribute pay for you based on contributions. All you need to do is develop.",
+      "Post open positions or tasks to the Feed and let skilled contributors come to you. Easily assign tasks, set rewards, or let our AI handle payments based on individual contributions. All you need to focus on is building the future.",
     image: "/collaborate.webp",
   },
   {
     id: "Contribute",
     heading: "Contribute",
-    header: "Play your part in a project",
+    header: "Make an Impact Through Tasks",
     content:
-      "From completing tasks to voting in project direction, your contributions make impact to the progression and decisions of a project.",
+      "Jump into action by completing tasks, solving challenges, or voting on key decisions. Every contribution you make, big or small, directly shapes the project's success and its direction.",
     image: "/contribute.webp",
   },
   {
     id: "Create",
     heading: "Create",
-    header: "Launch your idea",
+    header: "Bring Your Ideas to Life",
     content:
-      "Innovate in just a few clicks and create your project on the Blockchain, allowing infinite possibilities of enhancements for your project, just take a look at our extensions.",
+      "Launch your vision with just a few clicks. Create projects on the Blockchain with built-in tasks, bounties, and contributions tracked seamlessly. Explore our powerful extensions to unlock endless possibilities for your innovation.",
     image: "/create.webp",
   },
   {
     id: "Earn",
     heading: "Earn",
-    header: "You\u0027re rewarded for simply contributing",
+    header: "Get Paid for Every Contribution",
     content:
-      "There are so many way to make money, for yourself or your project. From launching fundraises with token promises, completing paid tasks, accepting project bounties or simply innovating a good product. Money and innovation are equally as important so we make doing both easy.",
+      "Monetize your efforts through multiple channels—whether by completing high-value tasks, claiming project bounties, launching token-backed fundraisers, or building innovative products. We make earning easy, so you can focus on creating value.",
     image: "/earn.webp",
   },
 ];

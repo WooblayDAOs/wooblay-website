@@ -54,10 +54,10 @@ export const Navbar = () => {
             as={Link}
             className="text-sm font-normal text-black font-bold"
             color="primary"
-            href={"/waitlist"}
+            href={"https://forms.gle/h6rLLHjtncVV46pi6"}
             radius="sm"
           >
-            Apply for Early Access
+            Join Waitlist
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -67,14 +67,19 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="px-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link color="primary" href={item.href} size="lg">
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+        <div className="mt-2 flex flex-col gap-2">
+          <NavbarMenuItem>
+            <Button
+              isExternal
+              as={Link}
+              className="text-sm font-normal text-white font-bold"
+              color="primary"
+              href={"https://forms.gle/h6rLLHjtncVV46pi6"}
+              radius="sm"
+            >
+              Join Waitlist
+            </Button>
+          </NavbarMenuItem>
         </div>
       </NavbarMenu>
     </NextUINavbar>

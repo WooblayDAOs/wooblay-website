@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
+import { FaDiscord, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 export default function GoatedTerminal() {
   return (
@@ -39,6 +40,17 @@ export default function GoatedTerminal() {
             the rest!
           </div>
         </div>
+        <div className="flex justify-center space-x-4">
+          <a href="https://x.com/RealWooblay" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="h-6 w-6 text-white" />
+          </a>
+          <a href="https://discord.gg/3JeUGzVrde" target="_blank" rel="noopener noreferrer">
+            <FaDiscord className="h-6 w-6 text-white" />
+          </a>
+          <a href="https://www.linkedin.com/in/jack-coleman-921611270/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn className="h-6 w-6 text-white" />
+          </a>
+        </div>
         <div>
           <div className="text-base sm:text-lg">Early Access Coming Soon!</div>
           <div className="p-4 sm:p-6">
@@ -46,10 +58,10 @@ export default function GoatedTerminal() {
               as="a"
               className="text-xs sm:text-sm font-normal text-black font-bold"
               color="primary"
-              href={"/waitlist"}
+              href={"https://forms.gle/h6rLLHjtncVV46pi6"}
               radius="sm"
             >
-              Apply Now
+              Join Waitlist
             </Button>
           </div>
         </div>
