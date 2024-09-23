@@ -15,21 +15,34 @@ const TextNImage: React.FC<TextNImageProps> = ({
   reverse = false,
 }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: reverse ? "row-reverse" : "row",
-        alignItems: "center",
-      }}
-    >
-      <Image
-        alt="Image"
-        src={imageUrl}
-        style={{ width: "100%", height: "auto" }}
-      />
-      <div style={{ width: "50%", padding: "0 20px" }}>
-        <h1>{heading}</h1>
-        <p>{text}</p>
+    <div>
+      <div
+        className={`hidden md:flex ${reverse ? "flex-row-reverse" : "flex-row"} items-center`}
+      >
+        <Image
+          alt="Image"
+          src={imageUrl}
+          className="w-full h-auto"
+        />
+        <div className="w-full md:w-1/2 p-4 md:p-8">
+          {heading && <h1 className="md:text-xl text-sm">{heading}</h1>}
+          <p className="sm:text-lg text-xs">{text}</p>
+        </div>
+      </div>
+
+      {/* Mobile */}
+      <div className="md:hidden">
+        {heading && <h1 className="text-center text-lg p-4">{heading}</h1>}
+        <div className="flex flex-col items-center">
+          <div className="p-4">
+            <p className="text-xs">{text}</p>
+          </div>
+          <Image
+            alt="Image"
+            src={imageUrl}
+            className="h-auto"
+          />
+        </div>
       </div>
     </div>
   );

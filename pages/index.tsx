@@ -11,9 +11,7 @@ export default function IndexPage() {
       <section>
         <Intro />
         <Walkthrough />
-        <div className="flex justify-center items-center mb-32">
-          <FeaturesGrid />
-        </div>
+        <FeaturesGrid />
         <Mission />
         <div>
           <GoatedTerminal />

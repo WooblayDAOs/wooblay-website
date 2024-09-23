@@ -91,72 +91,89 @@ export default function Walkthrough() {
   }, []);
 
   return (
-    <div className="flex h-screen overflow-hidden">
-      {/* Container for entire component scroll */}
-      <div
-        className={`w-full h-full no-scrollbar overflow-hidden ${isLeftNavVisible ? "overflow-y-auto" : "overflow-y-hidden"}`}
-      >
-        <div className="flex justify-center">
-          {/* Left Side: Sticky navigation */}
-          <div
-            ref={leftNavRef}
-            className="sticky top-[0%] z-10 flex flex-col justify-start p-8 md:p-4 shadow-md h-full"
-          >
-            {contentData.map((section, index) => (
-              <button
-                key={section.id}
-                className={`cursor-pointer py-2 md:py-4 text-md md:text-6xl transition-colors ${
-                  activeSection === section.id
-                    ? "text-primary font-bold"
+    <div>
+      <div className="hidden md:flex h-screen overflow-hidden">
+        {/* Container for entire component scroll */}
+        <div
+          className={`w-full h-full no-scrollbar overflow-hidden ${isLeftNavVisible ? "overflow-y-auto" : "overflow-y-hidden"}`}
+        >
+          <div className="flex justify-center">
+            {/* Left Side: Sticky navigation */}
+            <div
+              ref={leftNavRef}
+              className="sticky top-[0%] z-10 flex flex-col justify-start p-8 md:p-4 shadow-md h-full"
+            >
+              {contentData.map((section, index) => (
+                <button
+                  key={section.id}
+                  className={`cursor-pointer py-2 md:py-4 text-md md:text-6xl transition-colors ${activeSection === section.id
+                    ? "text-[#39FF14] font-bold"
                     : "text-gray-500"
-                }`}
-                onClick={() => {
-                  const targetSection = sectionsRef.current[index];
-
-                  if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
+                    }`}
+                  onClick={() => {
                     const targetSection = sectionsRef.current[index];
 
                     if (targetSection) {
                       targetSection.scrollIntoView({ behavior: "smooth" });
                     }
-                  }
-                }}
-              >
-                {section.heading}
-              </button>
-            ))}
-          </div>
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      const targetSection = sectionsRef.current[index];
 
-          {/* Right Side: Scrolling content */}
-          <div className="w-1/2">
-            {contentData.map((section, index) => (
-              <section
-                key={section.id}
-                ref={(el: HTMLDivElement) => {
-                  if (el) sectionsRef.current[index] = el;
-                }}
-                className={`min-h-screen flex items-center justify-center 
-                                    ${index === 0 ? "mt-[-200px] md:mt-[-300px]" : ""} 
-                                    ${index === contentData.length - 1 ? "mb-[200px] md:mb-[300px]" : ""}`}
-                data-section={section.id}
-              >
-                <div>
-                  <TextNImage
-                    heading={section.header}
-                    imageUrl={`${section.image}`}
-                    reverse={index % 2 === 0}
-                    text={section.content}
-                  />
-                </div>
-              </section>
-            ))}
+                      if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }
+                  }}
+                >
+                  {section.heading}
+                </button>
+              ))}
+            </div>
+
+            {/* Right Side: Scrolling content */}
+            <div className="w-1/2">
+              {contentData.map((section, index) => (
+                <section
+                  key={section.id}
+                  ref={(el: HTMLDivElement) => {
+                    if (el) sectionsRef.current[index] = el;
+                  }}
+                  className={`min-h-screen flex items-center justify-center 
+                                    ${index === 0 ? "mt-[-100px] md:mt-[-200px]" : ""} 
+                                    ${index === contentData.length - 1 ? "mb-[100px] md:mb-[200px]" : ""}`}
+                  data-section={section.id}
+                >
+                  <div>
+                    <TextNImage
+                      heading={section.header}
+                      imageUrl={`${section.image}`}
+                      reverse={index % 2 === 0}
+                      text={section.content}
+                    />
+                  </div>
+                </section>
+              ))}
+            </div>
           </div>
         </div>
+      </div>
+      {/* Mobile */}
+      <div className="md:hidden mb-64">
+        {contentData.map((section, index) => (
+          <section
+            key={section.id}
+            className="flex flex-col items-center justify-center p-8"
+          >
+            <TextNImage
+              heading={section.header}
+              imageUrl={`${section.image}`}
+              reverse={index % 2 === 0}
+              text={section.content}
+            />
+          </section>
+        ))}
       </div>
     </div>
   );
