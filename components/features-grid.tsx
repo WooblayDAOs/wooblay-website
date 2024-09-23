@@ -36,17 +36,22 @@ export default function FeaturesGrid() {
                       <Chip>NEW</Chip>
                     </div>
                     <div className="text-sm">
-                      A fully decentralized task board where users can submit, claim, and complete tasks. Verified on-chain, ensuring transparency and trust for contributors and project owners.
+                      A task board where you can create tasks with contributor requirements. Fully transparent for all parties.
                     </div>
                   </Card>,
                   <Card key="multikey5" className="flex flex-col space-y-4 p-4 w-64">
-                    <img src="/tracking.webp" alt="Off-Platform Tracking" className="h-40 bg-cover bg-center rounded" />
+                    <div
+                      className="h-40 bg-cover bg-center rounded"
+                      style={{
+                        backgroundImage: "url('/tracking.webp')",
+                      }}
+                    ></div>
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Off-Platform Tracking</div>
                       <Chip>NEW</Chip>
                     </div>
                     <div className="text-sm">
-                      Automatically track and reward contributions from linked GitHub or Figma repositories. Whether it&apos;s designing or developing, track progress seamlessly and ensure fair rewards.
+                      Automatically track and reward contributions from linked GitHub, Figma and more repositories.
                     </div>
                   </Card>,
                   <Card key="multikey7" className="flex flex-col space-y-4 p-4 w-64">
@@ -55,7 +60,7 @@ export default function FeaturesGrid() {
                       <Chip>NEW</Chip>
                     </div>
                     <div className="text-sm">
-                      Manage sensitive projects securely with private repositories. Grant temporary access to contributors and ensure control over proprietary data.
+                      Projects with private repositories can grant temporary access to contributors to ensure security.
                     </div>
                   </Card>,
                 ],
@@ -66,10 +71,10 @@ export default function FeaturesGrid() {
                   <Card key="multikey6" className="flex flex-col space-y-4 p-4 w-64">
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Extension Marketplace</div>
-                      <Chip>SOON</Chip>
+                      <Chip>LATER</Chip>
                     </div>
                     <div className="text-sm">
-                      Explore or create extensions to add custom functionalities to your project. Build tools, integrate APIs, and enhance collaboration through community-built extensions.
+                      Use or create extensions to add custom functionalities and enhancements to projects.
                     </div>
                   </Card>,
                   <Card
@@ -83,22 +88,73 @@ export default function FeaturesGrid() {
                     }}
                   >
                     <div className="flex flex-row items-center space-x-4">
-                      <div className="text-xl font-bold">AI Consultant</div>
-                      <Chip>SOON</Chip>
+                      <div className="text-xl font-bold">AI Agents</div>
+                      <Chip>LATER</Chip>
                     </div>
                     <div className="text-sm">
-                      An AI assistant trained on your project data to provide real-time, personalized recommendations, improving efficiency in task completion and development decisions.
+                      Fine tuned AI trained on your project data to provide personalised recommendations and complete tasks.
                     </div>
                   </Card>,
                   <Card key="multikey4" className="flex flex-col space-y-4 p-4 w-64">
                     <div className="flex flex-row items-center space-x-4">
-                      <div className="text-xl">Income by Impact</div>
-                      <Chip>VERY SOON</Chip>
+                      <div className="text-xl">Contribution Salaries</div>
+                      <Chip>INCOMING</Chip>
                     </div>
                     <div className="text-sm">
-                      Let AI optimize payouts for your team based on task completion and contributions. Move away from traditional fixed salaries, and ensure fair, dynamic compensation that matches work done.
+                      Automated payouts based on team contributions. Ensuring fair, dynamic compensation that matches work done.
                     </div>
                   </Card>,
+                ],
+              },
+              {
+                cards: [
+                  <Card key="multikey" className="flex flex-col space-y-4 p-4 w-64">
+                    <div className="flex flex-row items-center space-x-4">
+                      <div className="text-xl">Multi-Chain Support</div>
+                      <Chip>SOON</Chip>
+                    </div>
+                    <div className="text-sm">
+                      Expand your project across multiple chains, ensuring interoperability.
+                    </div>
+                  </Card>,
+                  <Card key="multikey1" className="flex flex-col space-y-4 p-4 w-64">
+                    <div
+                      className="h-40 bg-cover bg-center rounded"
+                      style={{
+                        backgroundImage: "url('/confidence.webp')",
+                      }}
+                    ></div>
+                    <div className="flex flex-row items-center space-x-4">
+                      <div className="text-xl">Collaborative Tools</div>
+                      <Chip>NEW</Chip>
+                    </div>
+                    <div className="text-sm">
+                      Collaborate and communicate with your team, assign tasks and track progress using built-in collaborative features.
+                    </div>
+                  </Card>,
+                  <Card
+                    key="multikey9"
+                    className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
+                    style={{
+                      backgroundImage: "url('/money.webp')",
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundBlendMode: 'overlay',
+                    }}
+                  >
+                    <div className="flex flex-row items-center space-x-4">
+                      <div className="text-xl font-bold">Simple Withdraws</div>
+                      <Chip>INCOMING</Chip>
+                    </div>
+                    <div className="text-sm">
+                      Securly and seamlessly move your funds in and out of the platform directly to your external wallet or bank account.
+                    </div>
+                  </Card>,
+                ],
+              },
+              {
+                className: "mt-32",
+                cards: [
                   <Card
                     key="multikey11"
                     className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
@@ -114,57 +170,36 @@ export default function FeaturesGrid() {
                       <Chip>INCOMING</Chip>
                     </div>
                     <div className="text-sm">
-                      Create a dynamic portfolio that highlights your contributions and earns you reputation tokens. These tokens not only showcase your value but can also be exchanged for financial rewards and are used to unlock exclusive tasks, increase your earnings, and qualify for top-tier positions.
-                    </div>
-                  </Card>,
-                ],
-              },
-              {
-                cards: [
-                  <Card key="multikey" className="flex flex-col space-y-4 p-4 w-64">
-                    <div className="flex flex-row items-center space-x-4">
-                      <div className="text-xl">Multi-Chain Support</div>
-                      <Chip>SOON</Chip>
-                    </div>
-                    <div className="text-sm">
-                      Expand your project across multiple chains, ensuring interoperability. Currently supports Base, with more chains to come.
-                    </div>
-                  </Card>,
-                  <Card key="multikey1" className="flex flex-col space-y-4 p-4 w-64">
-                    <div
-                      className="h-40 bg-cover bg-center rounded"
-                      style={{
-                        backgroundImage: "url('/confidence.webp')",
-                      }}
-                    ></div>
-                    <div className="flex flex-row items-center space-x-4">
-                      <div className="text-xl">Collaborative Tools</div>
-                      <Chip>NEW</Chip>
-                    </div>
-                    <div className="text-sm">
-                      Collaborate with your team in real-time, assign tasks, track progress, and ensure smooth communication across all departments using built-in collaborative features.
+                      Create a dynamic portfolio and earn reputation showcasing your value and earn financial rewards. Unlock exclusive tasks and qualify for top-tier positions.
                     </div>
                   </Card>,
                   <Card
-                    key="multikey9"
-                    className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
-                    style={{
-                      backgroundImage: "url('/money.webp')",
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      backgroundBlendMode: 'overlay',
-                    }}
+                    key="multikey12"
+                    className="flex flex-col space-y-4 p-4 w-64 mb-4"
                   >
                     <div className="flex flex-row items-center space-x-4">
-                      <div className="text-xl font-bold">Simple Withdraws</div>
-                      <Chip>VERY SOON</Chip>
+                      <div className="text-xl">Project Web</div>
+                      <Chip>LATER</Chip>
                     </div>
                     <div className="text-sm">
-                      Seamlessly move your funds in and out of the platform with just a few clicks. Whether you&apos;re receiving payments or transferring them to your bank account, our easy withdrawal process ensures you get your money quickly and securely.
+                      Launch sub-projects with assigned resources and team members, or make it entirely community-led, expand and innovate without limits.
                     </div>
                   </Card>,
-                ],
-              },
+
+                  <Card
+                    key="multikey13"
+                    className="flex flex-col space-y-4 p-4 w-64 mb-4"
+                  >
+                    <div className="flex flex-row items-center space-x-4">
+                      <div className="text-xl">Project Bounties</div>
+                      <Chip>LATER</Chip>
+                    </div>
+                    <div className="text-sm">
+                      Launch using a project bounty to kickstart your new initiative with initial funds and resources.
+                    </div>
+                  </Card>
+                ]
+              }
             ]}
           />
         </div>
@@ -186,7 +221,7 @@ export default function FeaturesGrid() {
               <Chip>NEW</Chip>
             </div>
             <div className="text-sm">
-              A fully decentralized task board where users can submit, claim, and complete tasks. Verified on-chain, ensuring transparency and trust for contributors and project owners.
+              A task board where you can create tasks with contributor requirements. Fully transparent for all parties.
             </div>
           </Card>
           <Card key="multikey5" className="flex flex-col space-y-4 p-4 w-full">
@@ -198,70 +233,19 @@ export default function FeaturesGrid() {
             ></div>
             <div className="flex flex-row items-center space-x-4">
               <div className="text-xl">Off-Platform Tracking</div>
+              <Chip>NEW</Chip>
             </div>
             <div className="text-sm">
-              Automatically track and reward contributions from linked GitHub or Figma repositories. Whether it&apos;s designing or developing, track progress seamlessly and ensure fair rewards.
-            </div>
-          </Card>
-          <Card key="multikey7" className="flex flex-col space-y-4 p-4 w-full">
-            <div className="flex flex-row items-center space-x-4">
-              <div className="text-xl">Private Repositories</div>
-            </div>
-            <div className="text-sm">
-              Manage sensitive projects securely with private repositories. Grant temporary access to contributors and ensure control over proprietary data.
-            </div>
-          </Card>
-          <Card key="multikey6" className="flex flex-col space-y-4 p-4 w-full">
-            <div className="flex flex-row items-center space-x-4">
-              <div className="text-xl">Extension Marketplace</div>
-              <Chip>SOON</Chip>
-            </div>
-            <div className="text-sm">
-              Explore or create extensions to add custom functionalities to your project. Build tools, integrate APIs, and enhance collaboration through community-built extensions.
-            </div>
-          </Card>
-          <Card
-            key="multikey9"
-            className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/penguins.webp')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundBlendMode: 'overlay',
-            }}
-          >
-            <div className="flex flex-row items-center space-x-4">
-              <div className="text-xl font-bold">AI Consultant</div>
-              <Chip>SOON</Chip>
-            </div>
-            <div className="text-sm">
-              An AI assistant trained on your project data to provide real-time, personalized recommendations, improving efficiency in task completion and development decisions.
-            </div>
-          </Card>
-          <Card
-            key="multikey11"
-            className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/woohoo.webp')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundBlendMode: 'overlay',
-            }}
-          >
-            <div className="flex flex-row items-center space-x-4">
-              <div className="text-xl font-bold">Reputation</div>
-              <Chip>INCOMING</Chip>
-            </div>
-            <div className="text-sm">
-              Create a dynamic portfolio that highlights your contributions and earns you reputation tokens. These tokens not only showcase your value but can also be exchanged for financial rewards and are used to unlock exclusive tasks, increase your earnings, and qualify for top-tier positions.
+              Automatically track and reward contributions from linked GitHub, Figma and more repositories.
             </div>
           </Card>
           <Card key="multikey4" className="flex flex-col space-y-4 p-4 w-full">
             <div className="flex flex-row items-center space-x-4">
-              <div className="text-xl">Auto-Payouts</div>
+              <div className="text-xl">Contribution Salaries</div>
+              <Chip>INCOMING</Chip>
             </div>
             <div className="text-sm">
-              Automatically distribute payments to contributors once tasks are completed and verified. Our auto-payout system ensures timely payments without manual intervention.
+              Automated payouts based on team contributions. Ensuring fair, dynamic compensation that matches work done.
             </div>
           </Card>
           <Card
@@ -279,7 +263,43 @@ export default function FeaturesGrid() {
               <Chip>INCOMING</Chip>
             </div>
             <div className="text-sm">
-              Seamlessly move your funds in and out of the platform with just a few clicks. Whether you&apos;re receiving payments or transferring them to your bank account, our easy withdrawal process ensures you get your money quickly and securely.
+              Securly and seamlessly move your funds in and out of the platform directly to your external wallet or bank account.
+            </div>
+          </Card>
+          <Card key="multikey7" className="flex flex-col space-y-4 p-4 w-full">
+            <div className="flex flex-row items-center space-x-4">
+              <div className="text-xl">Private Repositories</div>
+              <Chip>NEW</Chip>
+            </div>
+            <div className="text-sm">
+              Projects with private repositories can grant temporary access to contributors to ensure security.
+            </div>
+          </Card>
+          <Card key="multikey6" className="flex flex-col space-y-4 p-4 w-full">
+            <div className="flex flex-row items-center space-x-4">
+              <div className="text-xl">Extension Marketplace</div>
+              <Chip>LATER</Chip>
+            </div>
+            <div className="text-sm">
+              Use or create extensions to add custom functionalities and enhancements to projects.
+            </div>
+          </Card>
+          <Card
+            key="multikey9"
+            className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/penguins.webp')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundBlendMode: 'overlay',
+            }}
+          >
+            <div className="flex flex-row items-center space-x-4">
+              <div className="text-xl font-bold">AI Agents</div>
+              <Chip>LATER</Chip>
+            </div>
+            <div className="text-sm">
+              Fine tuned AI trained on your project data to provide personalised recommendations and complete tasks.
             </div>
           </Card>
           <Card key="multikey" className="flex flex-col space-y-4 p-4 w-full">
@@ -288,7 +308,7 @@ export default function FeaturesGrid() {
               <Chip>SOON</Chip>
             </div>
             <div className="text-sm">
-              Expand your project across multiple chains, ensuring interoperability. Currently supports Base, with more chains to come.
+              Expand your project across multiple chains, ensuring interoperability.
             </div>
           </Card>
           <Card key="multikey1" className="flex flex-col space-y-4 p-4 w-full">
@@ -300,9 +320,46 @@ export default function FeaturesGrid() {
             ></div>
             <div className="flex flex-row items-center space-x-4">
               <div className="text-xl">Collaborative Tools</div>
+              <Chip>NEW</Chip>
             </div>
             <div className="text-sm">
-              Collaborate with your team in real-time, assign tasks, track progress, and ensure smooth communication across all departments using built-in collaborative features.
+              Collaborate and communicate with your team, assign tasks and track progress using built-in collaborative features.
+            </div>
+          </Card>
+          <Card key="multikey12" className="flex flex-col space-y-4 p-4 w-full">
+            <div className="flex flex-row items-center space-x-4">
+              <div className="text-xl">Project Web</div>
+              <Chip>LATER</Chip>
+            </div>
+            <div className="text-sm">
+              Launch sub-projects with assigned resources and team members, or make it entirely community-led, expand and innovate without limits.
+            </div>
+          </Card>
+          <Card key="multikey13" className="flex flex-col space-y-4 p-4 w-full">
+            <div className="flex flex-row items-center space-x-4">
+              <div className="text-xl">Project Bounties</div>
+              <Chip>LATER</Chip>
+            </div>
+            <div className="text-sm">
+              Launch using a project bounty to kickstart your new initiative with initial funds and resources.
+            </div>
+          </Card>
+          <Card
+            key="multikey11"
+            className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/woohoo.webp')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundBlendMode: 'overlay',
+            }}
+          >
+            <div className="flex flex-row items-center space-x-4">
+              <div className="text-xl font-bold">Reputation</div>
+              <Chip>INCOMING</Chip>
+            </div>
+            <div className="text-sm">
+              Create a dynamic portfolio and earn reputation showcasing your value and earn financial rewards. Unlock exclusive tasks and qualify for top-tier positions.
             </div>
           </Card>
         </div>

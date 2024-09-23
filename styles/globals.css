@@ -44,6 +44,10 @@
   /* Firefox */
 }
 
+p {
+  font-family: "interText", sans-serif;
+}
+
 h1 {
   font-family: "titleBold", sans-serif;
 }

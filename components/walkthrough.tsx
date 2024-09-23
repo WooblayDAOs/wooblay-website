@@ -8,7 +8,7 @@ const contentData = [
     heading: "Collaborate",
     header: "Build with Your Dream Team",
     content:
-      "Post open positions or tasks to the Feed and let skilled contributors come to you. Easily assign tasks, set rewards, or let our AI handle payments based on individual contributions. All you need to focus on is building the future.",
+      "Easily assign tasks, release positions, set rewards and permissions, or let our AI handle payments based on individual contributions. Just focus on building your idea.",
     image: "/collaborate.webp",
   },
   {
@@ -16,7 +16,7 @@ const contentData = [
     heading: "Contribute",
     header: "Make an Impact Through Tasks",
     content:
-      "Jump into action by completing tasks, solving challenges, or voting on key decisions. Every contribution you make, big or small, directly shapes the project's success and its direction.",
+      "Jump into action by completing tasks, solving problems, or voting on key decisions. Every contribution you make, big or small, directly shapes a project.",
     image: "/contribute.webp",
   },
   {
@@ -24,7 +24,7 @@ const contentData = [
     heading: "Create",
     header: "Bring Your Ideas to Life",
     content:
-      "Launch your vision with just a few clicks. Create projects on the Blockchain with built-in tasks, bounties, and contributions tracked seamlessly. Explore our powerful extensions to unlock endless possibilities for your innovation.",
+      "Launch your vision with just a few clicks. Create projects where development tracked seamlessly and use extensions to enhance your project.",
     image: "/create.webp",
   },
   {
@@ -32,7 +32,7 @@ const contentData = [
     heading: "Earn",
     header: "Get Paid for Every Contribution",
     content:
-      "Monetize your efforts through multiple channels—whether by completing high-value tasks, claiming project bounties, launching token-backed fundraisers, or building innovative products. We make earning easy, so you can focus on creating value.",
+      "Monetize your efforts a variety of different ways, we make earning easy, so you can focus on creating value.",
     image: "/earn.webp",
   },
 ];
