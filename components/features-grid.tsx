@@ -3,29 +3,29 @@ import CardGrid from "./card-grid";
 
 export default function FeaturesGrid() {
   return (
-    <div className="relative">
+    <div className="relative bg-gradient-to-b from-[#3D3D3D] to-white">
       {/* Overall Header */}
       <div className="text-left mb-8 p-4 md:p-0 flex justify-center items-center">
         <div>
-          <h1 className="text-4xl font-bold">Innovate all in one place.</h1>
-          <p className="text-lg text-gray-600 w-3/4">
+          <h1 className="text-4xl font-bold text-[#39FF14]">Innovate all in one place.</h1>
+          <p className="text-lg text-gray-200 w-3/4">
             Explore the cutting-edge features we offer to streamline your workflow, enhance development, and unlock your project&apos;s potential.
           </p>
         </div>
       </div>
 
-      <div className="flex justify-center items-center mb-32">
+      <div className="flex justify-center items-center pb-32">
         <div className="hidden md:flex">
           <CardGrid
             columns={[
               {
-                className: "mt-16",
+                className: "pt-16",
                 cards: [
                   <Card
                     key="multikey9"
                     className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
                     style={{
-                      backgroundImage: "url('/chain.webp')",
+                      backgroundImage: "linear-gradient(to bottom right, #0000FF, #0000FF)",
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundBlendMode: 'overlay',
@@ -39,13 +39,7 @@ export default function FeaturesGrid() {
                       A task board where you can create tasks with contributor requirements. Fully transparent for all parties.
                     </div>
                   </Card>,
-                  <Card key="multikey5" className="flex flex-col space-y-4 p-4 w-64">
-                    <div
-                      className="h-40 bg-cover bg-center rounded"
-                      style={{
-                        backgroundImage: "url('/tracking.webp')",
-                      }}
-                    ></div>
+                  <Card key="multikey5" className="flex flex-col space-y-4 p-4 w-64 bg-[#EAEAEA] text-black">
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Off-Platform Tracking</div>
                       <Chip>NEW</Chip>
@@ -54,7 +48,7 @@ export default function FeaturesGrid() {
                       Automatically track and reward contributions from linked GitHub, Figma and more repositories.
                     </div>
                   </Card>,
-                  <Card key="multikey7" className="flex flex-col space-y-4 p-4 w-64">
+                  <Card key="multikey7" className="flex flex-col space-y-4 p-4 w-64 bg-[#EAEAEA] text-black">
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Private Repositories</div>
                       <Chip>NEW</Chip>
@@ -66,9 +60,9 @@ export default function FeaturesGrid() {
                 ],
               },
               {
-                className: "mt-32",
+                className: "pt-32",
                 cards: [
-                  <Card key="multikey6" className="flex flex-col space-y-4 p-4 w-64">
+                  <Card key="multikey6" className="flex flex-col space-y-4 p-4 w-64 bg-[#EAEAEA] text-black">
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Extension Marketplace</div>
                       <Chip>LATER</Chip>
@@ -81,7 +75,7 @@ export default function FeaturesGrid() {
                     key="multikey9"
                     className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
                     style={{
-                      backgroundImage: "url('/penguins.webp')",
+                      backgroundImage: "linear-gradient(to bottom right, #39FF14, #0000FF)",
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundBlendMode: 'overlay',
@@ -95,20 +89,20 @@ export default function FeaturesGrid() {
                       Fine tuned AI trained on your project data to provide personalised recommendations and complete tasks.
                     </div>
                   </Card>,
-                  <Card key="multikey4" className="flex flex-col space-y-4 p-4 w-64">
+                  <Card key="multikey4" className="flex flex-col space-y-4 p-4 w-64 bg-[#EAEAEA] text-black">
                     <div className="flex flex-row items-center space-x-4">
-                      <div className="text-xl">Contribution Salaries</div>
+                      <div className="text-xl">Contribution Rewards</div>
                       <Chip>INCOMING</Chip>
                     </div>
                     <div className="text-sm">
-                      Automated payouts based on team contributions. Ensuring fair, dynamic compensation that matches work done.
+                      Automated payouts of money or stake based on team contributions. Ensuring fair, dynamic compensation that matches work done.
                     </div>
                   </Card>,
                 ],
               },
               {
                 cards: [
-                  <Card key="multikey" className="flex flex-col space-y-4 p-4 w-64">
+                  <Card key="multikey" className="flex flex-col space-y-4 p-4 w-64 bg-[#EAEAEA] text-black">
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Multi-Chain Support</div>
                       <Chip>SOON</Chip>
@@ -117,13 +111,7 @@ export default function FeaturesGrid() {
                       Expand your project across multiple chains, ensuring interoperability.
                     </div>
                   </Card>,
-                  <Card key="multikey1" className="flex flex-col space-y-4 p-4 w-64">
-                    <div
-                      className="h-40 bg-cover bg-center rounded"
-                      style={{
-                        backgroundImage: "url('/confidence.webp')",
-                      }}
-                    ></div>
+                  <Card key="multikey1" className="flex flex-col space-y-4 p-4 w-64 bg-[#EAEAEA] text-black">
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Collaborative Tools</div>
                       <Chip>NEW</Chip>
@@ -136,7 +124,7 @@ export default function FeaturesGrid() {
                     key="multikey9"
                     className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
                     style={{
-                      backgroundImage: "url('/money.webp')",
+                      backgroundImage: "linear-gradient(to bottom right, #39FF14, #39FF14)",
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundBlendMode: 'overlay',
@@ -153,13 +141,13 @@ export default function FeaturesGrid() {
                 ],
               },
               {
-                className: "mt-32",
+                className: "pt-32",
                 cards: [
                   <Card
                     key="multikey11"
                     className="flex flex-col space-y-4 p-4 w-64 mb-4 text-white bg-cover bg-center"
                     style={{
-                      backgroundImage: "url('/woohoo.webp')",
+                      backgroundImage: "linear-gradient(to bottom right, #0000FF, #39FF14)",
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundBlendMode: 'overlay',
@@ -175,7 +163,7 @@ export default function FeaturesGrid() {
                   </Card>,
                   <Card
                     key="multikey12"
-                    className="flex flex-col space-y-4 p-4 w-64 mb-4"
+                    className="flex flex-col space-y-4 p-4 w-64 mb-4 bg-[#EAEAEA] text-black"
                   >
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Project Web</div>
@@ -188,7 +176,7 @@ export default function FeaturesGrid() {
 
                   <Card
                     key="multikey13"
-                    className="flex flex-col space-y-4 p-4 w-64 mb-4"
+                    className="flex flex-col space-y-4 p-4 w-64 mb-4 bg-[#EAEAEA] text-black"
                   >
                     <div className="flex flex-row items-center space-x-4">
                       <div className="text-xl">Project Bounties</div>
@@ -210,7 +198,7 @@ export default function FeaturesGrid() {
             key="multikey9"
             className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
             style={{
-              backgroundImage: "url('/chain.webp')",
+              backgroundImage: "linear-gradient(to bottom right, #0000FF, #0000FF)",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundBlendMode: 'overlay',
@@ -225,12 +213,6 @@ export default function FeaturesGrid() {
             </div>
           </Card>
           <Card key="multikey5" className="flex flex-col space-y-4 p-4 w-full">
-            <div
-              className="h-40 bg-cover bg-center rounded"
-              style={{
-                backgroundImage: "url('/tracking.webp')",
-              }}
-            ></div>
             <div className="flex flex-row items-center space-x-4">
               <div className="text-xl">Off-Platform Tracking</div>
               <Chip>NEW</Chip>
@@ -241,18 +223,18 @@ export default function FeaturesGrid() {
           </Card>
           <Card key="multikey4" className="flex flex-col space-y-4 p-4 w-full">
             <div className="flex flex-row items-center space-x-4">
-              <div className="text-xl">Contribution Salaries</div>
+              <div className="text-xl">Contribution Rewards</div>
               <Chip>INCOMING</Chip>
             </div>
             <div className="text-sm">
-              Automated payouts based on team contributions. Ensuring fair, dynamic compensation that matches work done.
+              Automated payouts of money or stake based on team contributions. Ensuring fair, dynamic compensation that matches work done.
             </div>
           </Card>
           <Card
             key="multikey12"
             className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
             style={{
-              backgroundImage: "url('/money.webp')",
+              backgroundImage: "linear-gradient(to bottom right, #39FF14, #39FF14)",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundBlendMode: 'overlay',
@@ -288,7 +270,7 @@ export default function FeaturesGrid() {
             key="multikey9"
             className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
             style={{
-              backgroundImage: "url('/penguins.webp')",
+              backgroundImage: "linear-gradient(to bottom right, #39FF14, #0000FF)",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundBlendMode: 'overlay',
@@ -312,12 +294,6 @@ export default function FeaturesGrid() {
             </div>
           </Card>
           <Card key="multikey1" className="flex flex-col space-y-4 p-4 w-full">
-            <div
-              className="h-40 bg-cover bg-center rounded"
-              style={{
-                backgroundImage: "url('/confidence.webp')",
-              }}
-            ></div>
             <div className="flex flex-row items-center space-x-4">
               <div className="text-xl">Collaborative Tools</div>
               <Chip>NEW</Chip>
@@ -348,7 +324,7 @@ export default function FeaturesGrid() {
             key="multikey11"
             className="flex flex-col space-y-4 p-4 w-full mb-4 text-white bg-cover bg-center"
             style={{
-              backgroundImage: "url('/woohoo.webp')",
+              backgroundImage: "linear-gradient(to bottom right, #0000FF, #39FF14)",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundBlendMode: 'overlay',

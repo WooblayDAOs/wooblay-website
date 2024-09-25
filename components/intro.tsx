@@ -10,7 +10,7 @@ export default function Intro() {
       className="p-6 md:mx-6 md:rounded-t-[20px] pt-32 h-screen mb-32"
       style={{
         background:
-          "linear-gradient(to bottom, #DEEFF5, #ffffff, #DEEFF5, #ffffff, #ffffff, #ffffff, #000000, #000000, #000000, #000000)",
+          "linear-gradient(to bottom, #DEEFF5, #ffffff, #DEEFF5, #ffffff, #ffffff, #ffffff, #3D3D3D, #3D3D3D, #3D3D3D, #3D3D3D)",
       }}
     >
       <div className="flex flex-col justify-center items-center">

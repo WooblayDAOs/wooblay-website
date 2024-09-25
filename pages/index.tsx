@@ -15,9 +15,7 @@ export default function IndexPage() {
         <FeaturesGrid />
         <Projects />
         <Mission />
-        <div>
-          <GoatedTerminal />
-        </div>
+        <GoatedTerminal />
       </section>
     </DefaultLayout>
   );

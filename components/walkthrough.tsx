@@ -101,7 +101,7 @@ export default function Walkthrough() {
             {/* Left Side: Sticky navigation */}
             <div
               ref={leftNavRef}
-              className="sticky top-[0%] z-10 flex flex-col justify-start items-start p-8 md:p-4 shadow-md h-full"
+              className="sticky top-[0%] z-10 flex flex-col justify-start items-start p-8 md:p-4 h-full"
             >
               {contentData.map((section, index) => (
                 <button

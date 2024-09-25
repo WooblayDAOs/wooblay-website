@@ -1,19 +1,20 @@
-import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Tabs, Tab, Card, CardBody, CardHeader, Button, Link } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function App() {
     let tabs = [
         {
             id: "team",
-            label: "Team",
+            label: "Your Team",
             content: (
                 <>
                     <h3>
-                        Build a team for your project with dynamic roles and permissions. Collaborate in real-time and distribute rewards how you see fit. We automate most of the project management so you can focus on building.
+                        Build a team for your project with dynamic roles and permissions. Collaborate in real-time and distribute rewards how you see fit from money to stake. We automate most of the project management so you can focus on building.
                     </h3>
                     <h2 className="mt-4">Potential use cases</h2>
                     <ul className="list-disc pl-6 mt-2">
                         <li><h3>Startups building teams from the ground up</h3></li>
-                        <li><h3>Companies looking to expand their remote workforce</h3></li>
+                        <li><h3>Companies looking to build community teams or reward their employees dynamically</h3></li>
                     </ul>
                 </>
             ),
@@ -41,7 +42,7 @@ export default function App() {
             content: (
                 <>
                     <h3>
-                        Launch fundraising campaigns for public goods and innovative projects. Raise capital within the platform through tokenized investments or traditional fundraising.
+                        Launch fundraising campaigns for public goods and innovative projects. Raise capital within the platform through token-based investments or traditional fundraising.
                     </h3>
                     <h2 className="mt-4">Potential use cases</h2>
                     <ul className="list-disc pl-6 mt-2">
@@ -75,13 +76,13 @@ export default function App() {
             content: (
                 <>
                     <h3>
-                        Share ownership of the project and its future with contributors, distributing rewards based on their stake and involvement.
+                        Share ownership of the project with contributors, distributing stake based on their involvement. Each user getting a % of the treasury based on their contributions determined by AI suggestions and automation.
                     </h3>
                     <h2 className="mt-4">Potential use cases</h2>
                     <ul className="list-disc pl-6 mt-2">
                         <li><h3>Startups sharing stakes with early contributors</h3></li>
-                        <li><h3>Community-driven initiatives with shared outcomes</h3></li>
-                        <li><h3>Community developed innovation and protocols</h3></li>
+                        <li><h3>Companies to incentivise their team with stake rewards</h3></li>
+                        <li><h3>Community driven projects where stake is dynamically shared</h3></li>
                     </ul>
                 </>
             ),
@@ -92,7 +93,7 @@ export default function App() {
             content: (
                 <>
                     <h3>
-                        Automate and outsource tasks, leveraging our community of skilled developers and contributors.
+                        Automate and outsource tasks, leveraging our community of skilled developers and contributors. Simply put a task up for grabs, set a reward, and watch as the community or your team completes it.
                     </h3>
                     <h2 className="mt-4">Potential use cases</h2>
                     <ul className="list-disc pl-6 mt-2">
@@ -105,35 +106,78 @@ export default function App() {
     ];
 
     return (
-        <div>
-            <div className="text-left mb-8 p-4 md:p-0 flex justify-center items-center">
-                <div>
-                    <h1 className="text-4xl">Implement your project, your way.</h1>
-                    <p className="text-lg text-gray-600 w-3/4">
-                        We provide the tools and infrastructure so that you can shape your project for whatever use case you use Wooblay for.
-                    </p>
+        <div className="min-h-screen bg-white relative">
+            <div className="pb-32 flex flex-col justify-center items-center">
+                <div className="flex w-full md:w-2/3 md:justify-center md:items-center flex-col">
+                    <Tabs
+                        aria-label="Dynamic tabs"
+                        radius="full"
+                        size="lg"
+                        items={tabs}
+                        color="secondary"
+                        variant="underlined"
+                        classNames={{
+                            tabContent: "text-black"
+                        }}
+                    >
+                        {(item) => (
+                            <Tab
+                                key={item.id}
+                                title={item.label}
+                                className="w-full p-2"
+                            >
+                                <Card className="bg-white text-black">
+                                    <div className="flex flex-col md:flex-row">
+                                        <div>
+                                            <CardHeader className="m-4 text-2xl font-titleBold rounded-lg bg-gradient-to-r from-black to-white text-white p-2 w-1/2">{item.label}</CardHeader>
+                                            <CardBody className="m-4 w-6/7">{item.content}</CardBody>
+                                        </div>
+                                        <Image src="/yingyang.webp" alt="yy" width={350} height={200} />
+                                    </div>
+                                </Card>
+                            </Tab>
+                        )}
+                    </Tabs>
                 </div>
-            </div>
-            <div className="flex w-full md:justify-center md:items-center flex-col mb-32">
-                <Tabs
-                    aria-label="Dynamic tabs"
-                    radius="full"
-                    size="lg"
-                    items={tabs}
-                >
-                    {(item) => (
-                        <Tab
-                            key={item.id}
-                            title={item.label}
-                            className="w-full sm:w-1/2 md:w-1/3 lg:w-3/4 p-2"
-                        >
-                            <Card>
-                                <CardHeader>{item.label}</CardHeader>
-                                <CardBody>{item.content}</CardBody>
-                            </Card>
-                        </Tab>
-                    )}
-                </Tabs>
+                <div className="md:w-1/2 p-2 md:flex gap-4 mt-12">
+                    <Card className="bg-white text-black">
+                        <div className="p-6 shadow-lg shadow-lg">
+                            <h1 className="text-2xl rounded-lg bg-gradient-to-r from-black to-white text-white p-2">Pitch Deck</h1>
+                            <h3 className="mt-2">A quick read and summary of our ambitions, team, and project.</h3>
+                            <div className="flex justify-center">
+                                <Button
+                                    isExternal
+                                    as={Link}
+                                    className="text-sm text-black font-bold mt-4 shadow-lg transform transition-transform hover:scale-105 w-1/2 m-4"
+                                    color="primary"
+                                    href={"https://forms.gle/h6rLLHjtncVV46pi6"}
+                                    radius="sm"
+                                >
+                                    View Pitch Deck
+                                </Button>
+                            </div>
+                        </div>
+                    </Card>
+
+                    <Card className="bg-white text-black shadow-lg mt-4 md:mt-0">
+                        <div className="p-6">
+                            <h1 className="text-2xl rounded-lg bg-gradient-to-r from-black to-white text-white p-2">Whitepaper</h1>
+                            <h3 className="mt-2">A read and summary of our ambitions, team, and project.</h3>
+                            <div className="flex justify-center">
+                                <Button
+                                    isExternal
+                                    as={Link}
+                                    className="text-sm text-black font-bold mt-4 shadow-lg transform transition-transform hover:scale-105 w-1/2 m-4"
+                                    color="primary"
+                                    href={"https://forms.gle/h6rLLHjtncVV46pi6"}
+                                    radius="sm"
+                                >
+                                    View Whitepaper
+                                </Button>
+                            </div>
+                        </div>
+                    </Card>
+                </div>
             </div>
         </div>
     );

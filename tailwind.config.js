@@ -30,7 +30,7 @@ module.exports = {
         normal: {
           extend: "dark",
           colors: {
-            background: "#04020D",
+            background: "#3D3D3D",
             foreground: "#FAFAFA",
             primary: {
               50: "#3B096C",
@@ -45,6 +45,10 @@ module.exports = {
               900: "#FEECFE",
               DEFAULT: "#4DFFFF",
               foreground: "#333333",
+            },
+            secondary: {
+              DEFAULT: "black",
+              foreground: "black",
             },
             focus: "#F182F6",
           },

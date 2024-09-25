@@ -11,7 +11,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <main className="bg-black">{children}</main>
+      <main className="bg-[#3D3D3D]">{children}</main>
     </div>
   );
 }

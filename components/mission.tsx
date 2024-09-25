@@ -7,7 +7,6 @@ export default function Mission() {
     "AUTOMATION.",
     "TRANSPARENCY.",
     "COLLABORATION.",
-    "100% ONCHAIN.",
     "",
     "What will you contribute?"
   ];
@@ -96,9 +95,9 @@ export default function Mission() {
 
   return (
     <section ref={sectionRef} className="relative bg-white">
-      <div className="flex justify-center items-center h-[130vh] p-8 md:p-0">
+      <div className="flex justify-center items-start h-[100vh] p-8 md:p-0">
         {/* Set width and center the container using mx-auto */}
-        <div className="text-3xl md:text-5xl flex flex-col gap-8 text-left leading-none h-96 mx-auto">
+        <div className="text-3xl md:text-5xl flex flex-col gap-8 text-left leading-none mx-auto">
           {typedLines.map((line, index) => (
             <h3
               key={index}
@@ -107,8 +106,6 @@ export default function Mission() {
             >
               {index === lines.length - 1 ? (
                 <span className="font-bold">{line}</span>
-              ) : index === lines.length - 3 ? (
-                <span className="text-purple-700 font-bold">{line}</span>
               ) : (
                 line
               )}

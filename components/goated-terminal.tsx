@@ -5,7 +5,7 @@ import { FaDiscord, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 export default function GoatedTerminal() {
   return (
     <div className="bg-white p-6">
-      <div className="flex flex-col space-y-8 md:space-y-16 text-center p-4 font-mono bg-black text-white p-6 md:px-6 rounded-[20px]">
+      <div className="flex flex-col space-y-8 md:space-y-16 text-center p-4 font-mono bg-[#3D3D3D] text-white p-6 md:px-6 rounded-[20px]">
         <div>
           {/* Mobile */}
           <pre className="text-primary text-xs sm:text-base font-bold leading-[1rem] sm:leading-[1.25rem] py-8 no-global-font md:hidden overflow-x-auto">
