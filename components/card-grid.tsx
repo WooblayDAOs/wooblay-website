@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import fake from "@/lib/fake";
+waidaw
 
 export interface CardGridColumn extends React.HTMLAttributes<HTMLElement> {
   cards: React.ReactNode[];
